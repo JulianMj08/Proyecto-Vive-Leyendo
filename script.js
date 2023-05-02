@@ -3,14 +3,58 @@ const desktopMenu = document.querySelector('.desktop-menu');
 const menuHamIcon = document.querySelector('.menu');
 const mobileMenu = document.querySelector('.mobile-menu');
 const carritoCompras = document.querySelector('.navbar-shopping-cart');
+
 const aside = document.querySelector('.product-detail');
 const cardsContainer = document.querySelector('.cards-container');
+
+const allProducts = document.querySelector('.all')
+const mainContainer = document.querySelector('.main-container');
+const abrirFiccion = document.querySelector('.ficcion-lista');
+const ficcionLibros = document.querySelector('.ficcion');
+const abrirSuspenso = document.querySelector('.suspenso-lista');
+const suspensoLibros = document.querySelector('.suspenso');
+const abrirJuveniles = document.querySelector('.juveniles-lista');
+const juvenilesLibros = document.querySelector('.juveniles');
+const abrirDesarrollo = document.querySelector('.desarrollo-lista');
+const desarrolloLibros = document.querySelector('.desarrollo');
+const abrirBiografia = document.querySelector('.biografia-lista');
+const biografiaLibros = document.querySelector('.biografia');
 
 
 
 emailNav.addEventListener('click', toggleDesktopMenu);
 menuHamIcon.addEventListener('click', toggleMobileMenu);
 carritoCompras.addEventListener('click', toggleCarroDeCompras);
+allProducts.addEventListener('click', toggleMainContainer);
+abrirFiccion.addEventListener('click', toggleFiccionLibros);
+abrirSuspenso.addEventListener('click', toggleSuspensoLibros);
+abrirJuveniles.addEventListener('click', toggleJuvenilesLibros);
+abrirDesarrollo.addEventListener('click', toggleDesarrolloLibros);
+abrirBiografia.addEventListener('click', toggleBiografiaLibros);
+
+
+function toggleMainContainer() {
+    mainContainer.classList.toggle('inactive');
+}
+
+function toggleFiccionLibros() {
+    ficcionLibros.classList.toggle('inactive');
+}
+
+function toggleSuspensoLibros() {
+    suspensoLibros.classList.toggle('inactive');
+}
+
+function toggleJuvenilesLibros() {
+    juvenilesLibros.classList.toggle('inactive');
+}
+
+function toggleDesarrolloLibros() {
+    desarrolloLibros.classList.toggle('inactive');
+}
+function toggleBiografiaLibros() {
+    biografiaLibros.classList.toggle('inactive');
+}
 
 
 
@@ -55,6 +99,7 @@ function toggleCarroDeCompras() {
 }
 
 
+
 /* creamos un objeto para obtener una lista dinamica de los productos y asi no tener que llenar 
 el html con muchos productos,asi se nos facilita para obtener productos de una base de datos */
 const productList = [];
@@ -83,56 +128,56 @@ productList.push({
 
 // aca empezamos a maquetar la lista de productos desde javaScript y haciendo manupulacion del DOM //
 
-function renderProducts(arr) {
-    for (product of arr) {
-        const productCard = document.createElement('div');
-        productCard.classList.add('product-card');
+// function renderProducts(arr) {
+//     for (product of arr) {
+//         const productCard = document.createElement('div');
+//         productCard.classList.add('product-card');
      
      
-        const productImg = document.createElement('img');
-        productImg.setAttribute('src', product.Image);
+//         const productImg = document.createElement('img');
+//         productImg.setAttribute('src', product.Image);
      
      
-        const productInfo = document.createElement('div');
-        productInfo.classList.add('product-info');
+//         const productInfo = document.createElement('div');
+//         productInfo.classList.add('product-info');
      
      
-        const productInfoDiv = document.createElement('div');
+//         const productInfoDiv = document.createElement('div');
      
-        const productPrice = document.createElement('p');
-        productPrice.innerText = '$' + product.price;
+//         const productPrice = document.createElement('p');
+//         productPrice.innerText = '$' + product.price;
      
-        const productName = document.createElement('p');
-        productName.innerText = product.name;
+//         const productName = document.createElement('p');
+//         productName.innerText = product.name;
      
-        productInfoDiv.appendChild(productPrice);
-        productInfoDiv.appendChild(productName);
+//         productInfoDiv.appendChild(productPrice);
+//         productInfoDiv.appendChild(productName);
      
      
      
-        const productInfoFigure = document.createElement('figure');
+//         const productInfoFigure = document.createElement('figure');
         
-        const productImgCart = document.createElement('img');
-        productImgCart.setAttribute('src', './icons/bt_add_to_cart.svg');
+//         const productImgCart = document.createElement('img');
+//         productImgCart.setAttribute('src', './icons/bt_add_to_cart.svg');
      
      
-     // A parir de aca empezamos ingresar etiqueta por etiqueta de abajo para arriba hasta llegar al contenedor principal,por ejemplo el cards-container//
-        productInfoFigure.appendChild(productImgCart);
+//      // A parir de aca empezamos ingresar etiqueta por etiqueta de abajo para arriba hasta llegar al contenedor principal,por ejemplo el cards-container//
+//         productInfoFigure.appendChild(productImgCart);
      
      
-        productInfo.appendChild(productInfoDiv);
-        productInfo.appendChild(productInfoFigure);
+//         productInfo.appendChild(productInfoDiv);
+//         productInfo.appendChild(productInfoFigure);
      
      
      
-        productCard.appendChild(productImg);
-        productCard.appendChild(productInfo);
+//         productCard.appendChild(productImg);
+//         productCard.appendChild(productInfo);
      
      
-        cardsContainer.appendChild(productCard);
+//         cardsContainer.appendChild(productCard);
      
         
-     }
-}
+//      }
+// }
 
-renderProducts();
+// renderProducts();
