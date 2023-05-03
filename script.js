@@ -3,10 +3,8 @@ const desktopMenu = document.querySelector('.desktop-menu');
 const menuHamIcon = document.querySelector('.menu');
 const mobileMenu = document.querySelector('.mobile-menu');
 const carritoCompras = document.querySelector('.navbar-shopping-cart');
-
 const aside = document.querySelector('.product-detail');
 const cardsContainer = document.querySelector('.cards-container');
-
 const allProducts = document.querySelector('.all')
 const mainContainer = document.querySelector('.main-container');
 const abrirFiccion = document.querySelector('.ficcion-lista');
@@ -17,8 +15,7 @@ const abrirJuveniles = document.querySelector('.juveniles-lista');
 const juvenilesLibros = document.querySelector('.juveniles');
 const abrirDesarrollo = document.querySelector('.desarrollo-lista');
 const desarrolloLibros = document.querySelector('.desarrollo');
-const abrirBiografia = document.querySelector('.biografia-lista');
-const biografiaLibros = document.querySelector('.biografia');
+
 
 
 
@@ -30,7 +27,7 @@ abrirFiccion.addEventListener('click', toggleFiccionLibros);
 abrirSuspenso.addEventListener('click', toggleSuspensoLibros);
 abrirJuveniles.addEventListener('click', toggleJuvenilesLibros);
 abrirDesarrollo.addEventListener('click', toggleDesarrolloLibros);
-abrirBiografia.addEventListener('click', toggleBiografiaLibros);
+
 
 
 function toggleMainContainer() {
@@ -52,9 +49,7 @@ function toggleJuvenilesLibros() {
 function toggleDesarrolloLibros() {
     desarrolloLibros.classList.toggle('inactive');
 }
-function toggleBiografiaLibros() {
-    biografiaLibros.classList.toggle('inactive');
-}
+
 
 
 
