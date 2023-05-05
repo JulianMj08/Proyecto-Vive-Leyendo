@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Outfit:wght@400;700&family=Poppins:wght@300&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-    <title>Clase 3</title>
+    <title>Vive Leyendo</title>
     <style>
         :root {
         --white: #ffffff;
@@ -33,7 +33,14 @@
             display: grid;
             grid-template-rows: auto 1fr auto;
             width: 300px;
+            border: 1px solid var(--very-light-pink);
+            border-radius: 10px;
+            padding: 16px;
+            -webkit-box-shadow: 6px 6px 5px -5px rgba(199,199,199,1);
+            -moz-box-shadow: 6px 6px 5px -5px rgba(199,199,199,1);
+            box-shadow: 6px 6px 5px -5px rgba(199,199,199,1);
         }
+        
         .logo {
             width: 150px;
             margin-bottom: 48px;
@@ -97,8 +104,6 @@
             border: solid 1px var(--hospital-green);
         }
 
-        
-
         @media (max-width: 640px) {
             .logo {
                 display: block;
@@ -111,32 +116,29 @@
             }
         }
 
-
     </style>
 </head>
 <body>
+    <!--INSCRIBIRSE-->
     <div class="login">
         <div class="form-container">
             <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
 
-            
-
             <form action="/" class="form">
-            <label for="email" class="label">Email address</label>
-            <input type="text" id="email" placeholder="platzi@example.com" class="input input-email">
+                <label for="email" class="label">Correo Eléctronico</label>
+                <input type="text" id="email" placeholder="correo@ejemplo.com" class="input input-email">
 
-            <label for="password" class="label">Password</label>
-            <input type="password" id="password" placeholder="*********" class="input input-password">
-            <a href="./index.html">
-                <input style="text-align: center;" type="text" value="Log in" class="primary-button">
+                <label for="password" class="label">Contraseña</label>
+                <input type="password" id="password" placeholder="*********" class="input input-password">
+                <a href="./index.html">
+                    <input style="text-align: center;" type="text" value="Ingresar" class="primary-button">
+                 </a>
+
+                <a href="./reestablecer.html">Olvidé mi contraseña</a>
+            </form>
+            <a href="./create.html">
+            <button class="secundary-button signup-button">Inscribirse</button>
             </a>
-
-            <a href="./reestablecer.html">Forgot my password</a>
-           </form>
-           <a href="./create.html">
-            <button class="secundary-button signup-button">sign up</button>
-           </a>
-           
         </div>     
     </div>
 </body>

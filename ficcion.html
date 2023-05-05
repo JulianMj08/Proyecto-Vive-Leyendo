@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css">
+  <title>Vive Leyendo</title>
+</head>
+<body>
+    <!--HEADER-->
+  <header>
+    <img src="./logos/logo-vive-2.png" alt="">
+    <h1>Vive Leyendo</h1>
+  </header>
+
+  <!--BARRA DE NAVEGACION--> <!--BARRA DE NAVEGACION IZQUIERDA-->
+  <nav>
+    <img src="./icons/icon_menu.svg" alt="menu" class="menu">
+    <div class="navbar-left">
+      <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li class="all"><a href="./masvendidos.html">Más vendidos</a></li>
+        <li class="ficcion-lista"><a class="active" href="ficcion.html">Ficción</a></li>
+        <li class="suspenso-lista"><a href="suspenso.html">Suspenso</a></li>
+        <li class="juveniles-lista"><a href="juveniles.html">Juveniles</a></li>
+        <li class="desarrollo-lista"><a href="desarrollopersonal.html">Desarrollo personal</a></li>
+      </ul>
+    </div>
+
+      <!--BARRA DE NAVEGACION DERECHA-->
+    <div class="navbar-right">
+      <ul>
+        <li class="navbar-email">correo@example.com</li>
+        <li class="navbar-shopping-cart">
+          <img src="./icons/icon_shopping_cart.svg" alt="shopping cart">
+          <div>3</div>
+        </li>
+      </ul>
+    </div>
+    <div class="desktop-menu inactive">
+        <ul>
+          <li>
+            <a href="./myOrder.html" class="title">Ordenes</a>
+          </li>
+          <li>
+            <a href="./myAccount.html">Mi cuenta</a>
+          </li>
+          <li>
+            <a href="./signUp.html">Inscribirse</a>
+          </li>
+        </ul>
+      </div>
+      
+      <!--MENU MOBILE-->
+      <div class="mobile-menu inactive">
+        <ul>
+          <li>
+            <a href="./products.html">CATEGORIES</a>
+          </li>
+          <li>
+            <a href="./products.html">All</a>
+          </li>
+          <li>
+            <a href="./products.html">Clothes</a> 
+          </li>
+          <li>
+            <a href="./products.html">Electronics</a>
+          </li>
+          <li>
+            <a href="./products.html">Furnitures</a>
+          </li>
+          <li>
+            <a href="./products.html">Toys</a>
+          </li>
+          <li>
+            <a href="./products.html">Other</a>
+          </li>
+        </ul>
+    
+        <ul>
+          <li>
+            <a href="./myOrder.html">My orders</a>
+          </li>
+          <li>
+            <a href="./myAccount.html">My account</a>
+          </li>
+        </ul>
+    
+        <ul>
+          <li>
+            <a href="/" class="email"></a>
+          </li>
+          <li>
+            <a href="./signUp.html" class="sign-out">Sign out</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+
+   <!--ASIDE-->
+   <aside class="product-detail inactive">
+    <div class="title-container">
+      <img src="./icons/flechita.svg" alt="arrow">
+      <p class="title">Mi orden</p>
+    </div>
+
+    <div class="my-order-content">
+      <div class="shopping-cart">
+        <figure>
+          <img src="./img/librosFiccion/libroLobaNegra.webp" alt="libro Loba negra">
+        </figure>
+        <p>Loba negra</p>
+        <p>$19,85 €</p>
+        <img src="./icons/icon_close.png" alt="close">
+      </div>
+
+      <div class="shopping-cart">
+        <figure>
+          <img src="./img/librosJuveniles/libroInvisible.webp" alt="libro invisible">
+        </figure>
+        <p>Invisible</p>
+        <p>$15,15 €</p>
+        <img src="./icons/icon_close.png" alt="close">
+      </div>
+
+      <div class="shopping-cart">
+        <figure>
+          <img src="./img/masVendidos/libroTodoArde.webp" alt="libro todo arde">
+        </figure>
+        <p>Todo arde</p>
+        <p>$21,75 €</p>
+        <img src="./icons/icon_close.png" alt="close">
+      </div>
+
+      <div class="order">
+        <p>
+          <span>Total</span>
+        </p>
+        <p>56,75 €</p>
+      </div>
+
+      <button class="primary-button checkout">
+        Checkout
+      </button>
+    </div>
+  </div>
+</aside>
+
+  <!--SECCION DE CATEGORIAS-->
+  <div>
+    <h3 class="title-populares">Libros de Ficción</h3>
+  </div>
+  <section class="main-container ficcion">
+    <div class="cards-container">
+      <div class="product-card">
+        <img src="./img/librosFiccion/libroDivergente.webp" alt="bike">
+        <div class="product-info">
+          <div  class="product-info-precio">
+            <p>10,40 €</p>
+            <p>La sociedad está dividida en cinco facciones. En una ceremonia anual, los chicos de dieciséis años deben decidir a qué facción dedicarán el resto de sus vidas. Beatrice tiene que elegir; quedarse con su familia... O ser quien realmente es.</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/librosFiccion/libroElBosqueOscuro.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>15,99 €</p>
+            <p>La esperada continuación de El problema de los tres cuerpos, el mejor libro de ciencia ficción y fantasía de 2016 según El Periódico, y uno de los diez mejores libros de ficción de 2016 según Playground. Preparate para divertirte.</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/librosFiccion/libroEntreLosMuertos.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>19,85 €</p>
+            <p>Hay muertos que nunca descansan, y tal vez no deban hacerlo hasta que se les haga justicia. Nadie lo sabe mejor que Nerea, agente de la Ertzaintza , una mujer solitaria que arrastra también sus propios cadáveres y fantasmas del pasado.</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/librosFiccion/libroLaLibreriaDelSeñorLivingtsone.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>17,95 €</p>
+            <p>¿Puede una pequeña librería de Londres cambiar una vida? Una historia para todos aquellos que han sentido alguna vez que la literatura les salvaba. Agnes Martí es una joven arqueóloga que se muda a Londres en busca de una oportunidad...</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/librosFiccion/libroLasHerederasDeLaSinger.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>19,85 €</p>
+            <p>Cuenta la conmovedora historia de las mujeres de una familia ligadas a una máquina de coser que custodió un secreto durante cuatro generaciones. Una historia ambiciosa y coral que hará las delicias de los seguidores de la autora...</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/librosFiccion/libroLibres.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>9,45  €</p>
+            <p>La última entrega de la trilogía que ha reinventado la novela erótica.Solo cuando nos equivocamos muchas veces, cuando experimentamos con nuestro placer hasta no dejar ningún rincón por descubrir, solo entonces podemos fluir.</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/librosFiccion/libroLobaNegra.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>19,85 €</p>
+            <p>La crítica y los lectores opinan: Es literalmente imposible no engancharse. Antonia Scott es lo mejor que le ha ocurrido al thriller internacional en los últimos años.Antonia Scott no tiene miedo a nada. Solo a sí misma.</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/librosFiccion/libroTeEsperoEnElFinDelMundowebp.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>16,10 €</p>
+            <p>¿Con quién te gustaría estar si supieras que mañana se acaba el mundo?Violet y Levi se conocen desde niños.Él sueña con crear un hogar.Ella, con escapar del suyo. Sin duda uno de los mas extraordinarios libros de ficción</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+  </section>
+    <footer>
+        <img src="./logos/logo-vive-2.png" alt="Logo">
+        <p>
+          <span><a href="">Condiciones de uso</a></span>
+          <span><a href="">Politica de privacidad</a></span>
+          <span><a href="">Aviso legal</a></span>
+        </p>
+        <p>© 2023 Vive leyendo</p>
+      </footer>
+      <script src="./script.js"></script>
+</body>
+</html>

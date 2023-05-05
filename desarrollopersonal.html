@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Vive Leyendo</title>
+</head>
+<body>
+    <!--HEADER-->
+  <header>
+    <img src="./logos/logo-vive-2.png" alt="">
+    <h1>Vive Leyendo</h1>
+  </header>
+
+  <!--BARRA DE NAVEGACION--> <!--BARRA DE NAVEGACION IZQUIERDA-->
+  <nav>
+    <img src="./icons/icon_menu.svg" alt="menu" class="menu">
+    <div class="navbar-left">
+      <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li class="all"><a href="./masvendidos.html">Más vendidos</a></li>
+        <li class="ficcion-lista"><a href="ficcion.html">Ficción</a></li>
+        <li class="suspenso-lista"><a href="suspenso.html">Suspenso</a></li>
+        <li class="juveniles-lista"><a href="juveniles.html">Juveniles</a></li>
+        <li class="desarrollo-lista"><a class="active" href="desarrollopersonal.html">Desarrollo personal</a></li>
+      </ul>
+    </div>
+
+      <!--BARRA DE NAVEGACION DERECHA-->
+    <div class="navbar-right">
+      <ul>
+        <li class="navbar-email">correo@example.com</li>
+        <li class="navbar-shopping-cart">
+          <img src="./icons/icon_shopping_cart.svg" alt="shopping cart">
+          <div>3</div>
+        </li>
+      </ul>
+    </div>
+    <div class="desktop-menu inactive">
+        <ul>
+          <li>
+            <a href="./myOrder.html" class="title">Ordenes</a>
+          </li>
+          <li>
+            <a href="./myAccount.html">Mi cuenta</a>
+          </li>
+          <li>
+            <a href="./signUp.html">Inscribirse</a>
+          </li>
+        </ul>
+      </div>
+      
+      <!--MENU MOBILE-->
+      <div class="mobile-menu inactive">
+        <ul>
+          <li>
+            <a href="./products.html">CATEGORIES</a>
+          </li>
+          <li>
+            <a href="./products.html">All</a>
+          </li>
+          <li>
+            <a href="./products.html">Clothes</a> 
+          </li>
+          <li>
+            <a href="./products.html">Electronics</a>
+          </li>
+          <li>
+            <a href="./products.html">Furnitures</a>
+          </li>
+          <li>
+            <a href="./products.html">Toys</a>
+          </li>
+          <li>
+            <a href="./products.html">Other</a>
+          </li>
+        </ul>
+    
+        <ul>
+          <li>
+            <a href="./myOrder.html">My orders</a>
+          </li>
+          <li>
+            <a href="./myAccount.html">My account</a>
+          </li>
+        </ul>
+    
+        <ul>
+          <li>
+            <a href="/" class="email"></a>
+          </li>
+          <li>
+            <a href="./signUp.html" class="sign-out">Sign out</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+
+   <!--ASIDE-->
+   <aside class="product-detail inactive">
+    <div class="title-container">
+      <img src="./icons/flechita.svg" alt="arrow">
+      <p class="title">Mi orden</p>
+    </div>
+
+    <div class="my-order-content">
+      <div class="shopping-cart">
+        <figure>
+          <img src="./img/librosFiccion/libroLobaNegra.webp" alt="libro Loba negra">
+        </figure>
+        <p>Loba negra</p>
+        <p>$19,85 €</p>
+        <img src="./icons/icon_close.png" alt="close">
+      </div>
+
+      <div class="shopping-cart">
+        <figure>
+          <img src="./img/librosJuveniles/libroInvisible.webp" alt="libro invisible">
+        </figure>
+        <p>Invisible</p>
+        <p>$15,15 €</p>
+        <img src="./icons/icon_close.png" alt="close">
+      </div>
+
+      <div class="shopping-cart">
+        <figure>
+          <img src="./img/masVendidos/libroTodoArde.webp" alt="libro todo arde">
+        </figure>
+        <p>Todo arde</p>
+        <p>$21,75 €</p>
+        <img src="./icons/icon_close.png" alt="close">
+      </div>
+
+      <div class="order">
+        <p>
+          <span>Total</span>
+        </p>
+        <p>56,75 €</p>
+      </div>
+
+      <button class="primary-button checkout">
+        Checkout
+      </button>
+    </div>
+  </div>
+</aside>
+
+  <!--SECCION DE CATEGORIAS-->
+  <div>
+    <h3 class="title-populares">Libros de Dearrollo personal</h3>
+  </div>
+  <section class="main-container desarrollo">
+    <div class="cards-container">
+      <div class="product-card">
+        <img src="./img/librosDesarrolloPersonal/libroConstruyendoUnaVidaConSentido.webp" alt="bike">
+        <div class="product-info">
+          <div  class="product-info-precio">
+            <p>11,39 €</p>
+            <p>Partiendo del principio que toda persona puede ser mejor, este libro basado en la auto-disciplina y la persistencia, ofrece una serie de fórmulas prácticas para desarrollarse integralmente (Cuerpo, Alma y Espíritu).</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/librosDesarrolloPersonal/libroDEsarrollaUnaMenteProdigiosa_.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>11,40 €</p>
+            <p>Desarrolla una mente prodigiosa. todos podemos desarrollar y mejorar nuestra mente hasta límites insospechados. Solo es necesario desearlo, acceder a un método eficaz y disponer de un guía experto.</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/librosDesarrolloPersonal/libroElClubDeLas5DeLaMañana.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>10,40 €</p>
+            <p>El club de las 5 de la mañana. libro, de profundo impacto personal, nos descubrirá las rutinas que han hecho posible que muchas personas alcancen grandes resultados al tiempo que nuestra felicidad y vitalidad aumenta.!</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/librosDesarrolloPersonal/libroLas7LeyesUniversalesDeDesarrolloPersonal.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>8,99 €</p>
+            <p>Las 7 leyes universales del desarrollo personal: Edición del 5º aniversario "Al conocerlas, descubrirás cómo puedes tener, ser o hacer cualquier cosa que desees. Descubrirás la verdadera magnificencia que está a tu alcance".</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/librosDesarrolloPersonal/libroNoLEMuestresANadieEsteLibro.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>13,95 €</p>
+            <p>No le muestres a nadie este libro. Porque con este libro tienes un lugar donde puedes ser quien eres en realidad. Te conocerás de verdad, reflexionarás sobre ti mismo y serás capaz de procesar las cosas</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/librosDesarrolloPersonal/libroPNL.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>18,71 €</p>
+            <p>Imagina que cuentas con la capacidad de dirigir o cambiar los pensamientos de las personas… ¿Puedes sentir el poder que esto te daría? ¿Te gustaría tener este poder y lograr absolutamente todos tus objetivos?</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/librosDesarrolloPersonal/libroPoderSinLimites.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>9,95 €</p>
+            <p>La vida pagará cualquier precio que tú pidas.Esta sencilla máxima muestra elocuentemente la teoría básica de este libro: el problema esencial del desarrollo personal no está en las circunstancias, sino en nuestra actitud vital.</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/librosDesarrolloPersonal/libroTacticasDeConversacion.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>15,90 €</p>
+            <p>La comunicación puede ser difícil para muchas personas. Quieres algo, pero no hablas de ello. Dices cosas que realmente no quieres decir. Y a veces permaneces completamente en silencio, negándote a compartir lo que piensas.</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+  </section>
+    <footer>
+        <img src="./logos/logo-vive-2.png" alt="Logo">
+        <p>
+          <span><a href="">Condiciones de uso</a></span>
+          <span><a href="">Politica de privacidad</a></span>
+          <span><a href="">Aviso legal</a></span>
+        </p>
+        <p>© 2023 Vive leyendo</p>
+      </footer>
+      <script src="./script.js"></script>
+</body>
+</html>

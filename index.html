@@ -15,7 +15,7 @@
 
   <!--HEADER-->
   <header>
-    <img src="./logos/logo_yard_sale.svg" alt="">
+    <img src="./logos/logo-vive-2.png" alt="">
     <h1>Vive Leyendo</h1>
   </header>
 
@@ -24,12 +24,12 @@
     <img src="./icons/icon_menu.svg" alt="menu" class="menu">
     <div class="navbar-left">
       <ul>
-        <li><a href="index.html">INICIO</a></li>
-        <li class="all">Más vendidos</li>
-        <li class="ficcion-lista">Ficción</li>
-        <li class="suspenso-lista">Suspenso</li>
-        <li class="juveniles-lista">Juveniles</li>
-        <li class="desarrollo-lista">Desarrollo personal</li>
+        <li><a class="active" href="index.html">INICIO</a></li>
+        <li class="all"><a href="./masvendidos.html">Más vendidos</a></li>
+        <li class="ficcion-lista"><a href="ficcion.html">Ficción</a></li>
+        <li class="suspenso-lista"><a href="suspenso.html">Suspenso</a></li>
+        <li class="juveniles-lista"><a href="juveniles.html">Juveniles</a></li>
+        <li class="desarrollo-lista"><a href="desarrollopersonal.html">Desarrollo personal</a></li>
       </ul>
     </div>
 
@@ -39,24 +39,25 @@
         <li class="navbar-email">correo@example.com</li>
         <li class="navbar-shopping-cart">
           <img src="./icons/icon_shopping_cart.svg" alt="shopping cart">
-          <div>2</div>
+          <div>3</div>
         </li>
       </ul>
     </div>
     <div class="desktop-menu inactive">
         <ul>
           <li>
-            <a href="./myOrder.html" class="title">My orders</a>
+            <a href="./myOrder.html" class="title">Ordenes</a>
           </li>
           <li>
-            <a href="./myAccount.html">My account</a>
+            <a href="./myAccount.html">Mi cuenta</a>
           </li>
           <li>
-            <a href="./signUp.html">Sign out</a>
+            <a href="./signUp.html">Inscribirse</a>
           </li>
         </ul>
       </div>
       
+      <!--MENU MOBILE-->
       <div class="mobile-menu inactive">
         <ul>
           <li>
@@ -102,38 +103,38 @@
       </div>
   </nav>
 
-<!--ASIDE-->
+  <!--ASIDE-->
   <aside class="product-detail inactive">
     <div class="title-container">
       <img src="./icons/flechita.svg" alt="arrow">
-      <p class="title">My order</p>
+      <p class="title">Mi orden</p>
     </div>
 
     <div class="my-order-content">
       <div class="shopping-cart">
         <figure>
-          <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike">
+          <img src="./img/librosFiccion/libroLobaNegra.webp" alt="libro Loba negra">
         </figure>
-        <p>Bike</p>
-        <p>$30,00</p>
+        <p>Loba negra</p>
+        <p>$19,85 €</p>
         <img src="./icons/icon_close.png" alt="close">
       </div>
 
       <div class="shopping-cart">
         <figure>
-          <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike">
+          <img src="./img/librosJuveniles/libroInvisible.webp" alt="libro invisible">
         </figure>
-        <p>Bike</p>
-        <p>$30,00</p>
+        <p>Invisible</p>
+        <p>$15,15 €</p>
         <img src="./icons/icon_close.png" alt="close">
       </div>
 
       <div class="shopping-cart">
         <figure>
-          <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike">
+          <img src="./img/masVendidos/libroTodoArde.webp" alt="libro todo arde">
         </figure>
-        <p>Bike</p>
-        <p>$30,00</p>
+        <p>Todo arde</p>
+        <p>$21,75 €</p>
         <img src="./icons/icon_close.png" alt="close">
       </div>
 
@@ -141,478 +142,181 @@
         <p>
           <span>Total</span>
         </p>
-        <p>$560.00</p>
+        <p>56,75 €</p>
       </div>
 
-      <button class="primary-button">
+      <button class="primary-button checkout">
         Checkout
       </button>
     </div>
   </div>
 </aside>
 
-<!--SECCION DE CATEGORIAS-->
-  <section class="main-container inactive">
-    <div class="cards-container">
+  <!--CONTENIDO PRINCIPAL-->
+  <main>
+    <div class="container-banner">
+      <img src="./img/otros/banner-2.jpg" alt="">
+      <h2>"Los libros son el alimento del alma, y los buenos libros son el manjar exquisito que nos nutre y nos hace crecer como seres humanos." Guillermo del Toro.</h2>
+    </div>
 
-      <div class="product-card">
-        <img src="./img/masVendidos/libroDejarDePEnsarDemasiado.webp" alt="bike">
-        <div class="product-info">
-          <div  class="product-info-precio">
-            <p>16,90 €</p>
-            <p>DEJAR DE PENSAR DEMASIADO: Las Reglas de Oro para Eliminar el Pensamiento Excesivo, Aliviar la Ansiedad, Vivir en el Presente y Lograr la Paz Interior ... de Oro Para Tu Desarrollo y Éxito Personal.Sin duda alguna un Excelente libro.</p>
-            <button>COMPRAR</button>
+    <!--SECCION DE LOS LIBROS MAS BUSCADOS EN MAYO-->
+    <div>
+      <h3 class="title-populares">Libros más buscados en Mayo</h3>
+    </div>
+      <section class="container-populares-mayo">
+        <div class="cards-container">
+          <div class="product-card">
+            <img src="./img/otros/libroAmoresDistopicos.webp" alt="libro amores distopicos">
+            <div class="product-info">
+              <div  class="product-info-precio">
+                <p>17,57 €</p>
+                <p>El amor tiene mil caras. Y no todas ellas siempre parecen reales, sino que, en ocasiones, nos semejan imaginadas, utópicas e incluso surrealistas. Casi ciencia ficción. Y, a veces, ese amor es el más palpable…</p>
+                <button>COMPRAR</button>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./img/masVendidos/libroElAngelDeLaCiudad.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>20,80 €</p>
-            <p>es una novela negra de Eva García Sáenz de Urturi ambientada en Vitoria que narra una investigación policial sobre asesinatos relacionados con la historia medieval de la ciudad. Intrigante y bien recibida por la crítica.</p>
-            <button>COMPRAR</button>
+    
+        <div class="cards-container">
+          <div class="product-card">
+            <img src="./img/otros/libroElColegioMasRaroDelMundo.webp" alt="bike">
+            <div class="product-info">
+              <div  class="product-info-precio">
+                <p>9,45 €</p>
+                <p>El colegio mas raro del mundo ¿Qué pasaría si compartiésemos nuestra familia? El colegio de Fede es el más raro del mundo. Para empezar, se llama TELE: Tecno Escuela de Lenguas Extranjeras.</p>
+                <button>COMPRAR</button>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+       
+          <div class="cards-container">
+            <div class="product-card">
+              <img src="./img/otros/libroLAHermanaLunawebp.webp" alt="bike">
+              <div class="product-info">
+                <div  class="product-info-precio">
+                  <p>5,69 €</p>
+                  <p>Este es el quinto volumen de la emocionante saga de Lucinda Riley Las 7 Hermanas, una serie de novelas basada en la mitología griega que enamorará a sus lectoras y que en este caso nos transporta a España.</p>
+                  <button>COMPRAR</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-      <div class="product-card">
-        <img src="./img/masVendidos/libroElHombreQueTeniaMiedoAVivir.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>11,90 €</p>
-            <p>Descubre el libro que ha transformado a miles de personas.Una historia emotiva, ilusionante e inspiradora en la que descubrirás que vivir no es lo mismo que existir ¡Atrévete a iniciar el trayecto que te hará cambiar... si quieres cambiar!</p>
-            <button>COMPRAR</button>
+        <!--SECCION DEL ARTICULO-->
+        <article class="nuevo-articulo">
+              <h3>los libros</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quasi quas, hic possimus sapiente dolor ut quam commodi aut? Harum odit impedit alias error sit fugiat. Nam cumque nemo explicabo beatae repudiandae, porro qui fuga, veritatis in harum error fugiat distinctio, dicta vero voluptate? Repellendus, voluptatum? Aliquid, rerum quod. Omnis adipisci at incidunt saepe dicta ullam harum mollitia, nemo asperiores vel tempora cupiditate architecto soluta placeat, optio totam laboriosam? Vitae excepturi, mollitia enim odio, consequatur maxime nam dolorem consectetur incidunt magnam nemo nisi neque iure. Quia rem eius cupiditate fugit odio itaque molestiae, tempore maiores quaerat! Eveniet alias aliquam quas.</p> 
+        </article>
+
+<!--SECCION DEL VIDEO-->
+        <div class="contenedor-seccion-video">
+            <video class="video"src="./img/otros/video2.mp4" type="video/mp4"  muted autoplay loop preload="auto">
+            </video>
+            <div class="container-images">
+              <div class="cards-container">
+                <div class="product-card">
+                  <img src="./img/otros/libroContandoAtardeceres.webp" alt="bike">
+                  <div class="product-info">
+                    <div  class="product-info-precio">
+                      <p>Contando atardeceres</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="container-images">
+                <div class="cards-container">
+                  <div class="product-card">
+                    <img src="./img/otros/libroEbano.webp" alt="bike">
+                    <div class="product-info">
+                      <div  class="product-info-precio">
+                        <p>Ebáno</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="product-card">
-        <img src="./img/masVendidos/libroElMonjeQueVendioSuFerrari.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>9,45 €</p>
-            <p>Desde hace más de quince años, ha marcado la vida de millones de personas.Esta es la extraordinaria historia de Julian Mantle, un abogado de éxito que, tras sufrir un ataque al corazón, debe afrontar el gran vacío de su existencia.</p>
-            <button>COMPRAR</button>
-          </div>
+        <!--SECCION DEL ARTICULO 2-->
+        <article class="nuevo-articulo articulo-dos">
+          <h3>los libros</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quasi quas, hic possimus sapiente dolor ut quam commodi aut? Harum odit impedit alias error sit fugiat. Nam cumque nemo explicabo beatae repudiandae, porro qui fuga, veritatis in harum error fugiat distinctio, dicta vero voluptate? Repellendus, voluptatum? Aliquid, rerum quod. Omnis adipisci at incidunt saepe dicta ullam harum mollitia, nemo asperiores vel tempora cupiditate architecto soluta placeat, optio totam laboriosam? Vitae excepturi, mollitia enim odio, consequatur maxime nam dolorem consectetur incidunt magnam nemo nisi neque iure. Quia rem eius cupiditate fugit odio itaque molestiae, tempore maiores quaerat! Eveniet alias aliquam quas.</p> 
+    </article>
+           
+        <!--SECCION DE LIBROS GRATIS-->
+        <div>
+          <h3 class="title-populares"> Muchos libros gratis</h3>
         </div>
-      </div>
+          <section class="container-populares-mayo">
+            <div class="cards-container">
+              <div class="product-card">
+                <img src="./img/librosGratis/laCaraDeLaMuerte.webp" alt="libro la cara de la muerte">
+                <div class="product-info">
+                  <div  class="product-info-precio">
+                    <p>Gratis</p>
+                    <p>LA CARA DE LA MUERTE es el libro número 1 de una nueva serie de thriller del autor de best-sellers, Blake Pierce, cuyo primer libro, Una vez desaparecido (Libro número 1), tiene más de 1.000 críticas de cinco estrellas.</p>
+                    <button>VER</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="cards-container">
+              <div class="product-card">
+                <img src="./img/librosGratis/laEsposaPerfecta.webp" alt="bike">
+                <div class="product-info">
+                  <div  class="product-info-precio">
+                    <p>Gratis</p>
+                    <p>La estudiante de perfilado de criminales (y recién casada), Jessie Hunt, descubre que en su nuevo hogar en los suburbios acechan secretos ocultos; cuando aparece un cadáver, se ve atrapada entre el punto de mira de sus nuevas amistades.</p>
+                    <button>VER</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+              <div class="cards-container">
+                <div class="product-card">
+                  <img src="./img/librosGratis/libroVolvereATI.webp" alt="bike">
+                  <div class="product-info">
+                    <div  class="product-info-precio">
+                      <p>Gratis</p>
+                      <p>Lo bueno de los libros de Patricia es que cada vez que desees tener esa sensación tan hogareña que envuelve a los Brady, solo has de coger sus libros y dejarte llevar por sus historias. Gracias a su forma de escribir, tan descriptible.</p>
+                      <button>VER</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-      <div class="product-card">
-        <img src="./img/masVendidos/libroInteligenciaEmocional.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>19,97 €</p>
-            <p>Aspectos que te ayudarán a fortalecer tu área emocional, personal y relacional. Esta colección te guiará fácilmente a vínculos más gratificantes y enriquecedores, así como a una situación profesional más exitosa y satisfactoria.</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
+              <div class="cards-container">
+                <div class="product-card">
+                  <img src="./img/librosGratis/libroSiEllaSupiera.webp" alt="bike">
+                  <div class="product-info">
+                    <div  class="product-info-precio">
+                      <p>Gratis</p>
+                      <p>Si ella supiera;toda una obra maestra de misterio y suspenso. Blake Pierce hizo un magnífico trabajo desarrollando personajes con un mundo psicológico tan bien descrito que es como un acceso directo al interior de sus mentes.</p>
+                      <button>VER</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section> 
+  </main>
 
-      <div class="product-card">
-        <img src="./img/masVendidos/libroLaEnvidiaDeLosMediocres.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>14,90 €</p>
-            <p>Un encargo de un amigo, una muerte accidental y una pequeña villa en la montaña son punto de partida de un caso que no solo removerá los cimientos de la tranquila sociedad rural, sino que pondra a prueba los límites de la conciencia humana.</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
+  <!--PIE DE PAGINA-->
+  <footer>
+    <img src="./logos/logo-vive-2.png" alt="Logo">
+    <p>
+      <span><a href="">Condiciones de uso</a></span>
+      <span><a href="">Politica de privacidad</a></span>
+      <span><a href="">Aviso legal</a></span>
+    </p>
+    <p>© 2023 Vive leyendo</p>
+  </footer>
 
-      <div class="product-card">
-        <img src="./img/masVendidos/libroQueridaYo.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>16,10 €</p>
-            <p>Antes, cuando escuchaba hablar sobre la importancia de conocerse a una misma, no lo entendía. Luego de treinta años viviendo contigo, ¿se puede saber qué es lo que te falta por conocer? ¿De verdad hay algo que puede pillarte por sorpresa?</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./img/masVendidos/libroTodoArde.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>21,75 €</p>
-            <p>Es esta es la historia de tres mujeres que lo han perdido absolutamente todo.Incluso el miedo.Por eso son tan peligrosas.Esta es la singular historia de una venganza imposible, sin ninguna posibilidad de éxito.</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  <section class="main-container ficcion inactive">
-    <div class="cards-container">
-
-      <div class="product-card">
-        <img src="./img/librosFiccion/libroDivergente.webp" alt="bike">
-        <div class="product-info">
-          <div  class="product-info-precio">
-            <p>10,40 €</p>
-            <p>La sociedad está dividida en cinco facciones. En una ceremonia anual, los chicos de dieciséis años deben decidir a qué facción dedicarán el resto de sus vidas. Beatrice tiene que elegir; quedarse con su familia... O ser quien realmente es.</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./img/librosFiccion/libroElBosqueOscuro.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>15,99 €</p>
-            <p>La esperada continuación de El problema de los tres cuerpos, el mejor libro de ciencia ficción y fantasía de 2016 según El Periódico, y uno de los diez mejores libros de ficción de 2016 según Playground. Preparate para divertirte.</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./img/librosFiccion/libroEntreLosMuertos.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>19,85 €</p>
-            <p>Hay muertos que nunca descansan, y tal vez no deban hacerlo hasta que se les haga justicia. Nadie lo sabe mejor que Nerea, agente de la Ertzaintza , una mujer solitaria que arrastra también sus propios cadáveres y fantasmas del pasado.</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./img/librosFiccion/libroLaLibreriaDelSeñorLivingtsone.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>17,95 €</p>
-            <p>¿Puede una pequeña librería de Londres cambiar una vida? Una historia para todos aquellos que han sentido alguna vez que la literatura les salvaba. Agnes Martí es una joven arqueóloga que se muda a Londres en busca de una oportunidad...</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./img/librosFiccion/libroLasHerederasDeLaSinger.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>19,85 €</p>
-            <p>Cuenta la conmovedora historia de las mujeres de una familia ligadas a una máquina de coser que custodió un secreto durante cuatro generaciones. Una historia ambiciosa y coral que hará las delicias de los seguidores de la autora...</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./img/librosFiccion/libroLibres.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>9,45  €</p>
-            <p>La última entrega de la trilogía que ha reinventado la novela erótica.Solo cuando nos equivocamos muchas veces, cuando experimentamos con nuestro placer hasta no dejar ningún rincón por descubrir, solo entonces podemos fluir.</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./img/librosFiccion/libroLobaNegra.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>19,85 €</p>
-            <p>La crítica y los lectores opinan: Es literalmente imposible no engancharse. Antonia Scott es lo mejor que le ha ocurrido al thriller internacional en los últimos años.Antonia Scott no tiene miedo a nada. Solo a sí misma.</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./img/librosFiccion/libroTeEsperoEnElFinDelMundowebp.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>16,10 €</p>
-            <p>¿Con quién te gustaría estar si supieras que mañana se acaba el mundo?Violet y Levi se conocen desde niños.Él sueña con crear un hogar.Ella, con escapar del suyo. Sin duda uno de los mas extraordinarios libros de ficción</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-  </section>
-
-  <section class="main-container suspenso inactive">
-    <div class="cards-container">
-
-      <div class="product-card">
-        <img src="./img/librosSuspenso/laNoviaGitana.webp" alt="bike">
-        <div class="product-info">
-          <div  class="product-info-precio">
-            <p>9,45 €</p>
-            <p>Policial y oscura, con una historia muy potente que ha enganchado a miles de lectores. Elena Blanco es de los mejores personajes femeninos protagonistas que he visto y el Madrid que se muestra, callejero y violento, da mucha fuerza.</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./img/librosSuspenso/libroElLibroNegroDeLasHoras.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>19,85 €</p>
-            <p>Alguien que lleva muerto cuarenta años no puede ser secuestrado y, desde luego, no puede sangrar. Vitoria, 2022. El exinspector Unai López de Ayala alias Kraken recibe una llamada anónima que cambiará lo que cree saber de su pasado...</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./img/librosSuspenso/libroLaCabaña.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>7,55 €</p>
-            <p>Si algo importa, todo importa. Dado que tú eres importante, todo lo que haces lo es. Cada vez que perdonas, el universo cambia; cada vez que te esfuerzas y tocas un corazón o una vida, el mundo cambia. Recomendadisimo.</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./img/librosSuspenso/libroLaCasaDeLasMuñecasRotas.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>14,99 €</p>
-            <p>Si buscas el desafío de la intriga y la excitación del suspense, si amas la novela negra policíaca, por supuesto que esta es tu historia: un thriller alimentado por un vendaval de acción, una madeja de intriga y toneladas de mala leche..</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./img/librosSuspenso/libroLaCaza.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>18,95 €</p>
-            <p>En los años 90 en Madrid, Jon se ve atrapado en una carrera contrarreloj por salvar su vida. Acusado de unos asesinatos y perseguido por los cuerpos de seguridad, medios de comunicación y asesinos a sueldo...</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./img/librosSuspenso/libroLaIslaDeLosAusentes.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>15,59 €</p>
-            <p>Un asesinato sin resolver. Una remota isla. Un oscuro pasado. La infancia de Billy Wheatley se ve interrumpida por la desaparición de una joven turista. Billy sabe que no debería involucrarse pero no puede resistirse.</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./img/librosSuspenso/libroLaPacienteSilenciosa.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>10,40 €</p>
-            <p>Alicia, una pintora de éxito, dispara cinco tiros en la cabeza de su marido, y no vuelve a hablar nunca más. Su negativa a emitir palabra alguna convierte una tragedia doméstica en un misterio que atrapa la imaginación de toda Inglaterra.</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./img/librosSuspenso/libroUnInvitadoInesperado.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>10,40 €</p>
-            <p>El nuevo y electrizante thriller de la autora de La pareja de al lado. Los huéspedes que van llegando al encantador y remoto hotelito Mitchell's Inn se observan mutuamente con interés pero desde una prudente distancia.</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-  </section>
-
-  <section class="main-container juveniles inactive">
-    <div class="cards-container">
-
-      <div class="product-card">
-        <img src="./img/librosJuveniles/libroEsUnaChicaEspecial.webp" alt="bike">
-        <div class="product-info">
-          <div  class="product-info-precio">
-            <p>11,99 €</p>
-            <p>Gracias a las aventuras vividas por Julia, la protagonista, este libro enseña a las niñas y a las jóvenes a creer en sí mismas y a superar los primeros obstáculos que encuentran en su vida.todos los niños y niñas del mundo deberian leerlo.</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./img/librosJuveniles/libroHastaQueNosQuedemosSinEstrellas.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>17,00 €</p>
-            <p>La historia de cómo dos astros colisionan, Liam ha perdido su pasión por YouTube. Está metido en una relación falsa que ha tenido un resultado catastrófico: se ha enamorado de la chica, Michelle, y ahora ella sale a escondidas con su mejor amigo..</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./img/librosJuveniles/libroInvisible.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>15,15 €</p>
-            <p>Un libro que nos muestra poco a poco las piezas de un puzle que nosotros, como lectores, debemos ordenar para obtener una visión completa de la historia que se está contando. Duro, real y necesario. Os lo recomiendo muchísimo.</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./img/librosJuveniles/libroLaLeyendaDelosXilem.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>7,99 €</p>
-            <p>¿Quieres saber que ocurre en este pequeño pueblo asturiano? Nel tiene trece años y sube cada mañana al Lago del Valle, situado cerca de su pueblo, a practicar con el violín y jugar con sus animales. Allí lleva una vida tranquila y rutinaria.</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./img/librosJuveniles/libroLaPuertaDeLosTresCerrojos.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>14,20 €</p>
-            <p>Después de recibir un misterioso mensaje, Niko recorre un nuevo camino para ir al instituto y descubre una casa que no había visto nunca antes. La resolución de un enigma le permite entrar en lo que sera un extraño lugar donde nacen universos.</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./img/librosJuveniles/libroLosDiosesDelNorte.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>15,15 €</p>
-            <p>Los dioses del norte; El día para los del día. La noche para los de la noche. Cuenta la leyenda que, en el valle del Baztán, los dioses convivían en hermandad y las criaturas del día y de la noche podían vivir en armonía...pero no por mucho tiempo.</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./img/librosJuveniles/libroSiempreHayUnLugar.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>12,30 €</p>
-            <p>La vida de Noa cambia cuando su familia tiene que mudarse lejos de su ciudad. Empezar el curso en un nuevo centro, adaptarse al pueblo y hacer nuevas amistades marcan su deseo de encontrar su verdadero lugar en el mundo.</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./img/librosJuveniles/libroTodasMisRespuestas.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>17,05 €</p>
-            <p>La nueva serie de Cherry Chic:como el mejor verano de tu vida, no querrás que se acabe. Incluye un adelanto en exclusiva de Todas mis dudas. Tres primos, un verano, una casa y un chiringuito frente al mar.tienes que leerlo !</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-  </section>
-
-  <section class="main-container desarrollo inactive">
-    <div class="cards-container">
-
-      <div class="product-card">
-        <img src="./img/librosDesarrolloPersonal/libroConstruyendoUnaVidaConSentido.webp" alt="bike">
-        <div class="product-info">
-          <div  class="product-info-precio">
-            <p>11,39 €</p>
-            <p>Partiendo del principio que toda persona puede ser mejor, este libro basado en la auto-disciplina y la persistencia, ofrece una serie de fórmulas prácticas para desarrollarse integralmente (Cuerpo, Alma y Espíritu).</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./img/librosDesarrolloPersonal/libroDEsarrollaUnaMenteProdigiosa_.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>11,40 €</p>
-            <p>Desarrolla una mente prodigiosa. todos podemos desarrollar y mejorar nuestra mente hasta límites insospechados. Solo es necesario desearlo, acceder a un método eficaz y disponer de un guía experto.</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./img/librosDesarrolloPersonal/libroElClubDeLas5DeLaMañana.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>10,40 €</p>
-            <p>El club de las 5 de la mañana. libro, de profundo impacto personal, nos descubrirá las rutinas que han hecho posible que muchas personas alcancen grandes resultados al tiempo que nuestra felicidad y vitalidad aumenta.!</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./img/librosDesarrolloPersonal/libroLas7LeyesUniversalesDeDesarrolloPersonal.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>8,99 €</p>
-            <p>Las 7 leyes universales del desarrollo personal: Edición del 5º aniversario "Al conocerlas, descubrirás cómo puedes tener, ser o hacer cualquier cosa que desees. Descubrirás la verdadera magnificencia que está a tu alcance".</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./img/librosDesarrolloPersonal/libroNoLEMuestresANadieEsteLibro.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>13,95 €</p>
-            <p>No le muestres a nadie este libro. Porque con este libro tienes un lugar donde puedes ser quien eres en realidad. Te conocerás de verdad, reflexionarás sobre ti mismo y serás capaz de procesar las cosas</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./img/librosDesarrolloPersonal/libroPNL.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>18,71 €</p>
-            <p>Imagina que cuentas con la capacidad de dirigir o cambiar los pensamientos de las personas… ¿Puedes sentir el poder que esto te daría? ¿Te gustaría tener este poder y lograr absolutamente todos tus objetivos?</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./img/librosDesarrolloPersonal/libroPoderSinLimites.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>9,95 €</p>
-            <p>La vida pagará cualquier precio que tú pidas.Esta sencilla máxima muestra elocuentemente la teoría básica de este libro: el problema esencial del desarrollo personal no está en las circunstancias, sino en nuestra actitud vital.</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="./img/librosDesarrolloPersonal/libroTacticasDeConversacion.webp" alt="bike">
-        <div class="product-info">
-          <div class="product-info-precio">
-            <p>15,90 €</p>
-            <p>La comunicación puede ser difícil para muchas personas. Quieres algo, pero no hablas de ello. Dices cosas que realmente no quieres decir. Y a veces permaneces completamente en silencio, negándote a compartir lo que piensas.</p>
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-  </section>
-
- 
   <script src="./script.js"></script>
 </body>
 </html>

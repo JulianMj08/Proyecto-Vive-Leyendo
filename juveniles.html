@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css">
+  <title>Vive Leyendo</title>
+</head>
+<body>
+    <!--HEADER-->
+  <header>
+    <img src="./logos/logo-vive-2.png" alt="">
+    <h1>Vive Leyendo</h1>
+  </header>
+
+  <!--BARRA DE NAVEGACION--> <!--BARRA DE NAVEGACION IZQUIERDA-->
+  <nav>
+    <img src="./icons/icon_menu.svg" alt="menu" class="menu">
+    <div class="navbar-left">
+      <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li class="all"><a href="./masvendidos.html">Más vendidos</a></li>
+        <li class="ficcion-lista"><a href="ficcion.html">Ficción</a></li>
+        <li class="suspenso-lista"><a href="suspenso.html">Suspenso</a></li>
+        <li class="juveniles-lista"><a class="active" href="juveniles.html">Juveniles</a></li>
+        <li class="desarrollo-lista"><a href="desarrollopersonal.html">Desarrollo personal</a></li>
+      </ul>
+    </div>
+
+      <!--BARRA DE NAVEGACION DERECHA-->
+    <div class="navbar-right">
+      <ul>
+        <li class="navbar-email">correo@example.com</li>
+        <li class="navbar-shopping-cart">
+          <img src="./icons/icon_shopping_cart.svg" alt="shopping cart">
+          <div>3</div>
+        </li>
+      </ul>
+    </div>
+    <div class="desktop-menu inactive">
+        <ul>
+          <li>
+            <a href="./myOrder.html" class="title">Ordenes</a>
+          </li>
+          <li>
+            <a href="./myAccount.html">Mi cuenta</a>
+          </li>
+          <li>
+            <a href="./signUp.html">Inscribirse</a>
+          </li>
+        </ul>
+      </div>
+      
+      <!--MENU MOBILE-->
+      <div class="mobile-menu inactive">
+        <ul>
+          <li>
+            <a href="./products.html">CATEGORIES</a>
+          </li>
+          <li>
+            <a href="./products.html">All</a>
+          </li>
+          <li>
+            <a href="./products.html">Clothes</a> 
+          </li>
+          <li>
+            <a href="./products.html">Electronics</a>
+          </li>
+          <li>
+            <a href="./products.html">Furnitures</a>
+          </li>
+          <li>
+            <a href="./products.html">Toys</a>
+          </li>
+          <li>
+            <a href="./products.html">Other</a>
+          </li>
+        </ul>
+    
+        <ul>
+          <li>
+            <a href="./myOrder.html">My orders</a>
+          </li>
+          <li>
+            <a href="./myAccount.html">My account</a>
+          </li>
+        </ul>
+    
+        <ul>
+          <li>
+            <a href="/" class="email"></a>
+          </li>
+          <li>
+            <a href="./signUp.html" class="sign-out">Sign out</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+
+   <!--ASIDE-->
+   <aside class="product-detail inactive">
+    <div class="title-container">
+      <img src="./icons/flechita.svg" alt="arrow">
+      <p class="title">Mi orden</p>
+    </div>
+
+    <div class="my-order-content">
+      <div class="shopping-cart">
+        <figure>
+          <img src="./img/librosFiccion/libroLobaNegra.webp" alt="libro Loba negra">
+        </figure>
+        <p>Loba negra</p>
+        <p>$19,85 €</p>
+        <img src="./icons/icon_close.png" alt="close">
+      </div>
+
+      <div class="shopping-cart">
+        <figure>
+          <img src="./img/librosJuveniles/libroInvisible.webp" alt="libro invisible">
+        </figure>
+        <p>Invisible</p>
+        <p>$15,15 €</p>
+        <img src="./icons/icon_close.png" alt="close">
+      </div>
+
+      <div class="shopping-cart">
+        <figure>
+          <img src="./img/masVendidos/libroTodoArde.webp" alt="libro todo arde">
+        </figure>
+        <p>Todo arde</p>
+        <p>$21,75 €</p>
+        <img src="./icons/icon_close.png" alt="close">
+      </div>
+
+      <div class="order">
+        <p>
+          <span>Total</span>
+        </p>
+        <p>56,75 €</p>
+      </div>
+
+      <button class="primary-button checkout">
+        Checkout
+      </button>
+    </div>
+  </div>
+</aside>
+
+  <!--SECCION DE CATEGORIAS-->
+  <div>
+    <h3 class="title-populares">Libros Juveniles</h3>
+  </div>
+  <section class="main-container juveniles">
+    <div class="cards-container">
+      <div class="product-card">
+        <img src="./img/librosJuveniles/libroEsUnaChicaEspecial.webp" alt="bike">
+        <div class="product-info">
+          <div  class="product-info-precio">
+            <p>11,99 €</p>
+            <p>Gracias a las aventuras vividas por Julia, la protagonista, este libro enseña a las niñas y a las jóvenes a creer en sí mismas y a superar los primeros obstáculos que encuentran en su vida.todos los niños y niñas del mundo deberian leerlo.</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/librosJuveniles/libroHastaQueNosQuedemosSinEstrellas.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>17,00 €</p>
+            <p>La historia de cómo dos astros colisionan, Liam ha perdido su pasión por YouTube. Está metido en una relación falsa que ha tenido un resultado catastrófico: se ha enamorado de la chica, Michelle, y ahora ella sale a escondidas con su mejor amigo..</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/librosJuveniles/libroInvisible.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>15,15 €</p>
+            <p>Un libro que nos muestra poco a poco las piezas de un puzle que nosotros, como lectores, debemos ordenar para obtener una visión completa de la historia que se está contando. Duro, real y necesario. Os lo recomiendo muchísimo.</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/librosJuveniles/libroLaLeyendaDelosXilem.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>7,99 €</p>
+            <p>¿Quieres saber que ocurre en este pequeño pueblo asturiano? Nel tiene trece años y sube cada mañana al Lago del Valle, situado cerca de su pueblo, a practicar con el violín y jugar con sus animales. Allí lleva una vida tranquila y rutinaria.</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/librosJuveniles/libroLaPuertaDeLosTresCerrojos.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>14,20 €</p>
+            <p>Después de recibir un misterioso mensaje, Niko recorre un nuevo camino para ir al instituto y descubre una casa que no había visto nunca antes. La resolución de un enigma le permite entrar en lo que sera un extraño lugar donde nacen universos.</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/librosJuveniles/libroLosDiosesDelNorte.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>15,15 €</p>
+            <p>Los dioses del norte; El día para los del día. La noche para los de la noche. Cuenta la leyenda que, en el valle del Baztán, los dioses convivían en hermandad y las criaturas del día y de la noche podían vivir en armonía...pero no por mucho tiempo.</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/librosJuveniles/libroSiempreHayUnLugar.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>12,30 €</p>
+            <p>La vida de Noa cambia cuando su familia tiene que mudarse lejos de su ciudad. Empezar el curso en un nuevo centro, adaptarse al pueblo y hacer nuevas amistades marcan su deseo de encontrar su verdadero lugar en el mundo.</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/librosJuveniles/libroTodasMisRespuestas.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>17,05 €</p>
+            <p>La nueva serie de Cherry Chic:como el mejor verano de tu vida, no querrás que se acabe. Incluye un adelanto en exclusiva de Todas mis dudas. Tres primos, un verano, una casa y un chiringuito frente al mar.tienes que leerlo !</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+  </section>
+    <footer>
+        <img src="./logos/logo-vive-2.png" alt="Logo">
+        <p>
+          <span><a href="">Condiciones de uso</a></span>
+          <span><a href="">Politica de privacidad</a></span>
+          <span><a href="">Aviso legal</a></span>
+        </p>
+        <p>© 2023 Vive leyendo</p>
+      </footer>
+      <script src="./script.js"></script>
+</body>
+</html>

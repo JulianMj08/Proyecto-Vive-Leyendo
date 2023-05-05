@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css">
+  <title>Vive Leyendo</title>
+</head>
+<body>
+    <!--HEADER-->
+  <header>
+    <img src="./logos/logo-vive-2.png" alt="">
+    <h1>Vive Leyendo</h1>
+  </header>
+
+  <!--BARRA DE NAVEGACION--> <!--BARRA DE NAVEGACION IZQUIERDA-->
+  <nav>
+    <img src="./icons/icon_menu.svg" alt="menu" class="menu">
+    <div class="navbar-left">
+      <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li class="all"><a href="./masvendidos.html">Más vendidos</a></li>
+        <li class="ficcion-lista"><a href="ficcion.html">Ficción</a></li>
+        <li class="suspenso-lista"><a class="active" href="suspenso.html">Suspenso</a></li>
+        <li class="juveniles-lista"><a href="juveniles.html">Juveniles</a></li>
+        <li class="desarrollo-lista"><a href="desarrollopersonal.html">Desarrollo personal</a></li>
+      </ul>
+    </div>
+
+      <!--BARRA DE NAVEGACION DERECHA-->
+    <div class="navbar-right">
+      <ul>
+        <li class="navbar-email">correo@example.com</li>
+        <li class="navbar-shopping-cart">
+          <img src="./icons/icon_shopping_cart.svg" alt="shopping cart">
+          <div>3</div>
+        </li>
+      </ul>
+    </div>
+    <div class="desktop-menu inactive">
+        <ul>
+          <li>
+            <a href="./myOrder.html" class="title">Ordenes</a>
+          </li>
+          <li>
+            <a href="./myAccount.html">Mi cuenta</a>
+          </li>
+          <li>
+            <a href="./signUp.html">Inscribirse</a>
+          </li>
+        </ul>
+      </div>
+      
+      <!--MENU MOBILE-->
+      <div class="mobile-menu inactive">
+        <ul>
+          <li>
+            <a href="./products.html">CATEGORIES</a>
+          </li>
+          <li>
+            <a href="./products.html">All</a>
+          </li>
+          <li>
+            <a href="./products.html">Clothes</a> 
+          </li>
+          <li>
+            <a href="./products.html">Electronics</a>
+          </li>
+          <li>
+            <a href="./products.html">Furnitures</a>
+          </li>
+          <li>
+            <a href="./products.html">Toys</a>
+          </li>
+          <li>
+            <a href="./products.html">Other</a>
+          </li>
+        </ul>
+    
+        <ul>
+          <li>
+            <a href="./myOrder.html">My orders</a>
+          </li>
+          <li>
+            <a href="./myAccount.html">My account</a>
+          </li>
+        </ul>
+    
+        <ul>
+          <li>
+            <a href="/" class="email"></a>
+          </li>
+          <li>
+            <a href="./signUp.html" class="sign-out">Sign out</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+
+   <!--ASIDE-->
+   <aside class="product-detail inactive">
+    <div class="title-container">
+      <img src="./icons/flechita.svg" alt="arrow">
+      <p class="title">Mi orden</p>
+    </div>
+
+    <div class="my-order-content">
+      <div class="shopping-cart">
+        <figure>
+          <img src="./img/librosFiccion/libroLobaNegra.webp" alt="libro Loba negra">
+        </figure>
+        <p>Loba negra</p>
+        <p>$19,85 €</p>
+        <img src="./icons/icon_close.png" alt="close">
+      </div>
+
+      <div class="shopping-cart">
+        <figure>
+          <img src="./img/librosJuveniles/libroInvisible.webp" alt="libro invisible">
+        </figure>
+        <p>Invisible</p>
+        <p>$15,15 €</p>
+        <img src="./icons/icon_close.png" alt="close">
+      </div>
+
+      <div class="shopping-cart">
+        <figure>
+          <img src="./img/masVendidos/libroTodoArde.webp" alt="libro todo arde">
+        </figure>
+        <p>Todo arde</p>
+        <p>$21,75 €</p>
+        <img src="./icons/icon_close.png" alt="close">
+      </div>
+
+      <div class="order">
+        <p>
+          <span>Total</span>
+        </p>
+        <p>56,75 €</p>
+      </div>
+
+      <button class="primary-button checkout">
+        Checkout
+      </button>
+    </div>
+  </div>
+</aside>
+
+  <!--SECCION DE CATEGORIAS-->
+  <div>
+    <h3 class="title-populares">Libros de Suspenso</h3>
+  </div>
+  <section class="main-container suspenso">
+    <div class="cards-container">
+     <div class="product-card">
+        <img src="./img/librosSuspenso/laNoviaGitana.webp" alt="bike">
+        <div class="product-info">
+          <div  class="product-info-precio">
+            <p>9,45 €</p>
+            <p>Policial y oscura, con una historia muy potente que ha enganchado a miles de lectores. Elena Blanco es de los mejores personajes femeninos protagonistas que he visto y el Madrid que se muestra, callejero y violento, da mucha fuerza.</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/librosSuspenso/libroElLibroNegroDeLasHoras.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>19,85 €</p>
+            <p>Alguien que lleva muerto cuarenta años no puede ser secuestrado y, desde luego, no puede sangrar. Vitoria, 2022. El exinspector Unai López de Ayala alias Kraken recibe una llamada anónima que cambiará lo que cree saber de su pasado...</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/librosSuspenso/libroLaCabaña.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>7,55 €</p>
+            <p>Si algo importa, todo importa. Dado que tú eres importante, todo lo que haces lo es. Cada vez que perdonas, el universo cambia; cada vez que te esfuerzas y tocas un corazón o una vida, el mundo cambia. Recomendadisimo.</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/librosSuspenso/libroLaCasaDeLasMuñecasRotas.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>14,99 €</p>
+            <p>Si buscas el desafío de la intriga y la excitación del suspense, si amas la novela negra policíaca, por supuesto que esta es tu historia: un thriller alimentado por un vendaval de acción, una madeja de intriga y toneladas de mala leche..</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/librosSuspenso/libroLaCaza.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>18,95 €</p>
+            <p>En los años 90 en Madrid, Jon se ve atrapado en una carrera contrarreloj por salvar su vida. Acusado de unos asesinatos y perseguido por los cuerpos de seguridad, medios de comunicación y asesinos a sueldo...</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/librosSuspenso/libroLaIslaDeLosAusentes.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>15,59 €</p>
+            <p>Un asesinato sin resolver. Una remota isla. Un oscuro pasado. La infancia de Billy Wheatley se ve interrumpida por la desaparición de una joven turista. Billy sabe que no debería involucrarse pero no puede resistirse.</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/librosSuspenso/libroLaPacienteSilenciosa.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>10,40 €</p>
+            <p>Alicia, una pintora de éxito, dispara cinco tiros en la cabeza de su marido, y no vuelve a hablar nunca más. Su negativa a emitir palabra alguna convierte una tragedia doméstica en un misterio que atrapa la imaginación de toda Inglaterra.</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/librosSuspenso/libroUnInvitadoInesperado.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>10,40 €</p>
+            <p>El nuevo y electrizante thriller de la autora de La pareja de al lado. Los huéspedes que van llegando al encantador y remoto hotelito Mitchell's Inn se observan mutuamente con interés pero desde una prudente distancia.</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+  </section>
+    <footer>
+        <img src="./logos/logo-vive-2.png" alt="Logo">
+        <p>
+          <span><a href="">Condiciones de uso</a></span>
+          <span><a href="">Politica de privacidad</a></span>
+          <span><a href="">Aviso legal</a></span>
+        </p>
+        <p>© 2023 Vive leyendo</p>
+      </footer>
+      <script src="./script.js"></script>
+</body>
+</html>

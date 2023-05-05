@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css">
+  <title>Vive Leyendo</title>
+</head>
+<body>
+    <!--HEADER-->
+  <header>
+    <img src="./logos/logo-vive-2.png" alt="">
+    <h1>Vive Leyendo</h1>
+  </header>
+
+  <!--BARRA DE NAVEGACION--> <!--BARRA DE NAVEGACION IZQUIERDA-->
+  <nav>
+    <img src="./icons/icon_menu.svg" alt="menu" class="menu">
+    <div class="navbar-left">
+      <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li class="all"><a class="active" href="./masvendidos.html">Más vendidos</a></li>
+        <li class="ficcion-lista"><a href="ficcion.html">Ficción</a></li>
+        <li class="suspenso-lista"><a href="suspenso.html">Suspenso</a></li>
+        <li class="juveniles-lista"><a href="juveniles.html">Juveniles</a></li>
+        <li class="desarrollo-lista"><a href="desarrollopersonal.html">Desarrollo personal</a></li>
+      </ul>
+    </div>
+
+      <!--BARRA DE NAVEGACION DERECHA-->
+    <div class="navbar-right">
+      <ul>
+        <li class="navbar-email">correo@example.com</li>
+        <li class="navbar-shopping-cart">
+          <img src="./icons/icon_shopping_cart.svg" alt="shopping cart">
+          <div>3</div>
+        </li>
+      </ul>
+    </div>
+    <div class="desktop-menu inactive">
+        <ul>
+          <li>
+            <a href="./myOrder.html" class="title">Ordenes</a>
+          </li>
+          <li>
+            <a href="./myAccount.html">Mi cuenta</a>
+          </li>
+          <li>
+            <a href="./signUp.html">Inscribirse</a>
+          </li>
+        </ul>
+      </div>
+      
+      <!--MENU MOBILE-->
+      <div class="mobile-menu inactive">
+        <ul>
+          <li>
+            <a href="./products.html">CATEGORIES</a>
+          </li>
+          <li>
+            <a href="./products.html">All</a>
+          </li>
+          <li>
+            <a href="./products.html">Clothes</a> 
+          </li>
+          <li>
+            <a href="./products.html">Electronics</a>
+          </li>
+          <li>
+            <a href="./products.html">Furnitures</a>
+          </li>
+          <li>
+            <a href="./products.html">Toys</a>
+          </li>
+          <li>
+            <a href="./products.html">Other</a>
+          </li>
+        </ul>
+    
+        <ul>
+          <li>
+            <a href="./myOrder.html">My orders</a>
+          </li>
+          <li>
+            <a href="./myAccount.html">My account</a>
+          </li>
+        </ul>
+    
+        <ul>
+          <li>
+            <a href="/" class="email"></a>
+          </li>
+          <li>
+            <a href="./signUp.html" class="sign-out">Sign out</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+
+   <!--ASIDE-->
+   <aside class="product-detail inactive">
+    <div class="title-container">
+      <img src="./icons/flechita.svg" alt="arrow">
+      <p class="title">Mi orden</p>
+    </div>
+
+    <div class="my-order-content">
+      <div class="shopping-cart">
+        <figure>
+          <img src="./img/librosFiccion/libroLobaNegra.webp" alt="libro Loba negra">
+        </figure>
+        <p>Loba negra</p>
+        <p>$19,85 €</p>
+        <img src="./icons/icon_close.png" alt="close">
+      </div>
+
+      <div class="shopping-cart">
+        <figure>
+          <img src="./img/librosJuveniles/libroInvisible.webp" alt="libro invisible">
+        </figure>
+        <p>Invisible</p>
+        <p>$15,15 €</p>
+        <img src="./icons/icon_close.png" alt="close">
+      </div>
+
+      <div class="shopping-cart">
+        <figure>
+          <img src="./img/masVendidos/libroTodoArde.webp" alt="libro todo arde">
+        </figure>
+        <p>Todo arde</p>
+        <p>$21,75 €</p>
+        <img src="./icons/icon_close.png" alt="close">
+      </div>
+
+      <div class="order">
+        <p>
+          <span>Total</span>
+        </p>
+        <p>56,75 €</p>
+      </div>
+
+      <button class="primary-button checkout">
+        Checkout
+      </button>
+    </div>
+  </div>
+</aside>
+
+  <!--SECCION DE CATEGORIAS-->
+  <div>
+    <h3 class="title-populares">Libros más vendidos</h3>
+  </div>
+  <section class="main-container">
+    <div class="cards-container">
+      <div class="product-card">
+        <img src="./img/masVendidos/libroDejarDePEnsarDemasiado.webp" alt="bike">
+        <div class="product-info">
+          <div  class="product-info-precio">
+            <p>16,90 €</p>
+            <p>DEJAR DE PENSAR DEMASIADO: Las Reglas de Oro para Eliminar el Pensamiento Excesivo, Aliviar la Ansiedad, Vivir en el Presente y Lograr la Paz Interior ... de Oro Para Tu Desarrollo y Éxito Personal.Sin duda alguna un Excelente libro.</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/masVendidos/libroElAngelDeLaCiudad.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>20,80 €</p>
+            <p>es una novela negra de Eva García Sáenz de Urturi ambientada en Vitoria que narra una investigación policial sobre asesinatos relacionados con la historia medieval de la ciudad. Intrigante y bien recibida por la crítica.</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/masVendidos/libroElHombreQueTeniaMiedoAVivir.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>11,90 €</p>
+            <p>Descubre el libro que ha transformado a miles de personas.Una historia emotiva, ilusionante e inspiradora en la que descubrirás que vivir no es lo mismo que existir ¡Atrévete a iniciar el trayecto que te hará cambiar... si quieres cambiar!</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/masVendidos/libroElMonjeQueVendioSuFerrari.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>9,45 €</p>
+            <p>Desde hace más de quince años, ha marcado la vida de millones de personas.Esta es la extraordinaria historia de Julian Mantle, un abogado de éxito que, tras sufrir un ataque al corazón, debe afrontar el gran vacío de su existencia.</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/masVendidos/libroInteligenciaEmocional.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>19,97 €</p>
+            <p>Aspectos que te ayudarán a fortalecer tu área emocional, personal y relacional. Esta colección te guiará fácilmente a vínculos más gratificantes y enriquecedores, así como a una situación profesional más exitosa y satisfactoria.</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/masVendidos/libroLaEnvidiaDeLosMediocres.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>14,90 €</p>
+            <p>Un encargo de un amigo, una muerte accidental y una pequeña villa en la montaña son punto de partida de un caso que no solo removerá los cimientos de la tranquila sociedad rural, sino que pondra a prueba los límites de la conciencia humana.</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/masVendidos/libroQueridaYo.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>16,10 €</p>
+            <p>Antes, cuando escuchaba hablar sobre la importancia de conocerse a una misma, no lo entendía. Luego de treinta años viviendo contigo, ¿se puede saber qué es lo que te falta por conocer? ¿De verdad hay algo que puede pillarte por sorpresa?</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="./img/masVendidos/libroTodoArde.webp" alt="bike">
+        <div class="product-info">
+          <div class="product-info-precio">
+            <p>21,75 €</p>
+            <p>Es esta es la historia de tres mujeres que lo han perdido absolutamente todo.Incluso el miedo.Por eso son tan peligrosas.Esta es la singular historia de una venganza imposible, sin ninguna posibilidad de éxito.</p>
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+        <img src="./logos/logo-vive-2.png" alt="Logo">
+        <p>
+          <span><a href="">Condiciones de uso</a></span>
+          <span><a href="">Politica de privacidad</a></span>
+          <span><a href="">Aviso legal</a></span>
+        </p>
+        <p>© 2023 Vive leyendo</p>
+      </footer>
+      <script src="./script.js"></script>
+</body>
+</html>

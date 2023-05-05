@@ -13,13 +13,17 @@
     margin: 0;
     font-family: 'Quicksand', sans-serif;
   }
+
+  /*HEADER*/
   header {
     width: 100%;
     background-color: var(--hospital-green);
     height: 60px;
     display: flex;
+  }
 
-
+  header img {
+   margin-left: 10px;
   }
 
   .inactive {
@@ -66,6 +70,9 @@
   .navbar-left ul li a {
     text-decoration: none;
   }
+  .active {
+    color: rgb(237, 66, 66);
+  }
 
   .navbar-right ul li a {
     text-decoration: none;
@@ -109,7 +116,100 @@
     align-items: center;
   }
 
-  /* menu en desktop */
+  /*CONTENIDO PRINCIPAL*/
+
+  .container-banner img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    
+    -webkit-box-shadow: 6px 6px 5px -6px rgba(199,199,199,1);
+    -moz-box-shadow: 6px 6px 6px -6px rgba(199,199,199,1);
+    box-shadow: 6px 6px 6px -6px rgba(199,199,199,1);
+  }
+  .container-banner h2 {
+    position: absolute;
+    bottom: 7px;
+    color: var(--text-input-field);
+    padding: 15px;
+  }
+
+  .container-populares-mayo{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+  }
+  .title-populares {
+    text-align: start;
+    padding: 20px;
+    margin: 0;
+    margin-left: 20px;
+  
+  }
+
+  .nuevo-articulo {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--very-light-pink);
+    border-top: 1px solid var(--very-light-pink);
+    background-color: var(--text-input-field);
+  }
+
+  .nuevo-articulo h3 {
+  margin-top: 0;
+  padding-top: 20px;
+  }
+  .nuevo-articulo p {
+    padding: 10px 60px;
+  }
+  .contenedor-seccion-video {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+
+  .video {
+    width: 400px;
+    height: 500px;
+    margin-left: 80px;
+    margin-top: 56px;
+    border-radius: 100%;
+  }
+
+  .container-images {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .container-images .cards-container {
+    margin-right:50px;
+  }
+  /* FOOTER*/
+  footer {
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    background: var(--hospital-green);
+
+  }
+  
+  footer img {
+    width: 100px;
+    height: 100px;
+  }
+
+  footer span {
+    margin: 0 15px;
+  }
+  footer span a {
+    text-decoration: none;
+    color: var(--white);
+  }
+
+  /* MENU EN DESKTOP */
   .desktop-menu {
     position: absolute;
     background: var(--white);
@@ -148,7 +248,7 @@
     display: inline-block;
   }
 
-/* menu en mobile */
+/* MENU EN MOBILE */
 
 .mobile-menu {
     background-color: var(--white);
@@ -182,7 +282,7 @@
     color: var(--hospital-green) !important;
   }
 
-  /* aside (product detail y carrito de compras) */
+  /* ASIDE (PRODUCT DETAIL Y CARRITO DE COMPRAS) */
   .product-detail {
     background-color: var(--white);
     width: 360px;
@@ -190,6 +290,8 @@
     box-sizing: border-box;
     position: absolute;
     right: 0;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 10px;
   }
   .title-container {
     display: flex;
@@ -235,9 +337,9 @@
     margin: 0;
   }
   .shopping-cart figure img {
-    width: 70px;
-    height: 70px;
-    border-radius: 20px;
+    width: 60px;
+    height: 80px;
+    border-radius: 10px;
     object-fit: cover;
   }
   .shopping-cart p:nth-child(2) {
@@ -258,8 +360,11 @@
     font-weight: bold;
     height: 50px;
   }
+  .checkout {
+    margin-bottom: 22px;
+  }
   
-  /* product list  */
+  /*PRODUCT LIST */
   .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, 240px);
@@ -268,6 +373,8 @@
     margin-top: 20px;
     
   }
+
+
   .product-card {
     display: flex;
     flex-direction: column;
@@ -275,8 +382,12 @@
     width: 240px;
     border: 1px solid var(--very-light-pink);
     border-radius: 8px;
+    -webkit-box-shadow: 6px 6px 5px -5px rgba(199,199,199,1);
+    -moz-box-shadow: 6px 6px 5px -5px rgba(199,199,199,1);
+      box-shadow: 6px 6px 5px -5px rgba(199,199,199,1);
     
   }
+  
   .product-card img {
     margin-top: 10px;
     width: 150px;
@@ -299,9 +410,9 @@
 
   .product-info-precio button {
     margin: 15px;
-    padding: 14px;
+    padding: 8px 36px;
     background-color: var(--hospital-green);
-    border-radius: 8px;
+    border-radius: 6px;
     border: none;
     border: 1px solid var(--very-light-pink);
   }
