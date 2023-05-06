@@ -15,6 +15,7 @@ const abrirJuveniles = document.querySelector('.juveniles-lista');
 const juvenilesLibros = document.querySelector('.juveniles');
 const abrirDesarrollo = document.querySelector('.desarrollo-lista');
 const desarrolloLibros = document.querySelector('.desarrollo');
+const bannerFrase = document.querySelector('.frase-banner')
 
 
 
@@ -27,6 +28,8 @@ abrirFiccion.addEventListener('click', toggleFiccionLibros);
 abrirSuspenso.addEventListener('click', toggleSuspensoLibros);
 abrirJuveniles.addEventListener('click', toggleJuvenilesLibros);
 abrirDesarrollo.addEventListener('click', toggleDesarrolloLibros);
+menuHamIcon.addEventListener('click', toggleBannerFrase);
+
 
 
 
@@ -50,6 +53,11 @@ function toggleDesarrolloLibros() {
     desarrolloLibros.classList.toggle('inactive');
 }
 
+function toggleBannerFrase () {
+    const isMobileMenuOpen = bannerFrase.classList.contains('inactive');
+    
+    bannerFrase.classList.toggle('inactive');
+}
 
 
 
@@ -72,9 +80,11 @@ function toggleMobileMenu() {
     const isAsideClosed = aside.classList.contains('inactive');
     if (!isAsideClosed) {
        aside.classList.add('inactive');
-}
+}     
         mobileMenu.classList.toggle('inactive');
+        
 }
+
 
 
 
