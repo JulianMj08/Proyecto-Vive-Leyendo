@@ -1,4 +1,4 @@
-/* generales */
+/* GENERALES */
 :root {
     --white: #FFFFFF;
     --black: #000000;
@@ -8,6 +8,8 @@
     --sm: 14px;
     --md: 16px;
     --lg: 18px;
+    
+ 
   }
   body {
     margin: 0;
@@ -29,7 +31,7 @@
   .inactive {
     display: none;
   }
-/* navbar (general) */
+/* NAVBAR (GENERAL) */
   nav {
     display: flex;
     justify-content: space-between;
@@ -136,6 +138,7 @@
 
   .container-populares-mayo{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     padding-bottom: 50px;
   }
@@ -166,20 +169,23 @@
   .contenedor-seccion-video {
     width: 90%;
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
     padding-bottom: 50px;
   }
 
   .video {
+    border-radius: 100%;
     width: 400px;
     height: 500px;
     margin-left: 80px;
     margin-top: 56px;
-    border-radius: 100%;
+
   }
 
   .container-images {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
   }
 
@@ -207,6 +213,9 @@
   footer span a {
     text-decoration: none;
     color: var(--white);
+  }
+  .parrafo-dos {
+    background: var(--hospital-green);
   }
 
   /* MENU EN DESKTOP */
@@ -374,7 +383,6 @@
     
   }
 
-
   .product-card {
     display: flex;
     flex-direction: column;
@@ -384,8 +392,7 @@
     border-radius: 8px;
     -webkit-box-shadow: 6px 6px 5px -5px rgba(199,199,199,1);
     -moz-box-shadow: 6px 6px 5px -5px rgba(199,199,199,1);
-      box-shadow: 6px 6px 5px -5px rgba(199,199,199,1);
-    
+      box-shadow: 6px 6px 5px -5px rgba(199,199,199,1); 
   }
   
   .product-card img {
@@ -415,6 +422,7 @@
     border-radius: 6px;
     border: none;
     border: 1px solid var(--very-light-pink);
+    cursor: pointer;
   }
 
   .product-info div p:nth-child(1) {
@@ -444,24 +452,24 @@
     .desktop-menu {
         display: none;
     }
-    .product-detail {
-        width: 100%;
-      }
-      .cards-container {
-        grid-template-columns: repeat(auto-fill, 140px);
-      }
-      .product-card {
-        width: 140px;
-      }
-      .product-card img {
-        width: 140px;
-        height: 140px;
-      }
   }
 
+  @media (max-width: 510px) {
+    .parrafo-uno{
+        display: flex;
+        flex-direction: column;
+    }
+  }
 
   @media (min-width: 641px) {
     .mobile-menu {
         display: none;
     }
+  }
+
+  @media (max-width: 660px) {
+    .video {
+        display: none;
+    }
+   
   }
