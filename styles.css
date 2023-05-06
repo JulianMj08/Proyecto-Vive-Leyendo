@@ -487,3 +487,13 @@
     }
    
   }
+
+  @media (max-width: 450px) {
+    .container-banner h2 {
+        bottom: 321px;
+    }
+    .container-images {
+      margin-left: 10px;
+    }
+   
+  }

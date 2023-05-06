@@ -85,9 +85,6 @@ function toggleMobileMenu() {
         
 }
 
-
-
-
 // si el destok-menu esta abierto al momento de darle click al carrito entonces automaticamente se cierra el desktopMenu
 function toggleCarroDeCompras() {
     const isCarritoclosed = carritoCompras.classList.contains('inactive');
