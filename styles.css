@@ -497,3 +497,122 @@
     }
    
   }
+
+/* Dark Mode Variables - Appended */
+:root {
+    /* Dark Mode Specific Variables */
+    --dm-background: #121212;
+    --dm-text: #E0E0E0;
+    --dm-surface: #1E1E1E;
+    --dm-primary: #7BB6A4;
+    --dm-secondary-text: #A0A0A0;
+}
+
+/* Dark Mode Base Styles - Appended */
+body.dark-mode {
+    --white: var(--dm-background);
+    --black: var(--dm-text);
+    --very-light-pink: var(--dm-secondary-text);
+    --text-input-field: var(--dm-surface);
+    --hospital-green: var(--dm-primary);
+
+    background-color: var(--dm-background);
+    color: var(--dm-text);
+}
+
+/* Specific Dark Mode Overrides - Appended */
+body.dark-mode header {
+    background-color: var(--dm-surface);
+    border-bottom: 1px solid var(--dm-text);
+}
+
+body.dark-mode nav {
+    border-bottom: 1px solid var(--dm-text);
+}
+
+body.dark-mode .navbar-left ul li {
+    border: 1px solid var(--dm-secondary-text);
+}
+
+body.dark-mode .navbar-left ul li a {
+    color: var(--dm-text);
+}
+
+body.dark-mode .navbar-left ul li:hover {
+    border: 1px solid var(--dm-primary);
+    color: var(--dm-primary);
+    background-color: var(--dm-surface);
+}
+
+body.dark-mode .desktop-menu {
+    background: var(--dm-surface);
+    border: 1px solid var(--dm-secondary-text);
+}
+
+body.dark-mode .desktop-menu ul li a {
+    color: var(--dm-text);
+}
+
+body.dark-mode .desktop-menu ul li:last-child a {
+    color: var(--dm-primary);
+}
+
+body.dark-mode .mobile-menu {
+    background-color: var(--dm-surface);
+    border: 1px solid var(--dm-secondary-text);
+}
+
+body.dark-mode .mobile-menu a {
+    color: var(--dm-text);
+}
+
+body.dark-mode .mobile-menu .sign-out {
+    color: var(--dm-primary) !important;
+}
+
+body.dark-mode .product-detail {
+    background-color: var(--dm-surface);
+    border: 1px solid var(--dm-secondary-text);
+}
+
+body.dark-mode .nuevo-articulo {
+    background-color: var(--dm-surface);
+    border-bottom: 1px solid var(--dm-secondary-text);
+    border-top: 1px solid var(--dm-secondary-text);
+}
+
+body.dark-mode footer {
+    background: var(--dm-surface);
+}
+
+body.dark-mode footer span a {
+    color: var(--dm-text);
+}
+
+body.dark-mode .product-card {
+    border: 1px solid var(--dm-secondary-text);
+    background-color: var(--dm-surface);
+    box-shadow: 6px 6px 5px -5px rgba(0,0,0,0.5);
+}
+
+body.dark-mode .product-info-precio button {
+    background-color: var(--dm-primary);
+    color: var(--dm-background);
+    border: 1px solid var(--dm-secondary-text);
+}
+
+/* Dark Mode Toggle Button Style - Appended */
+#darkModeToggle {
+    padding: 8px 12px;
+    border: 1px solid var(--hospital-green);
+    background-color: transparent;
+    color: var(--hospital-green);
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+body.dark-mode #darkModeToggle {
+    border: 1px solid var(--dm-primary);
+    color: var(--dm-primary);
+}

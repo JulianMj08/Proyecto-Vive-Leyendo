@@ -183,3 +183,36 @@ productList.push({
 // }
 
 // renderProducts();
+
+// Dark Mode Toggle Functionality
+const darkModeToggleButton = document.getElementById('darkModeToggle');
+
+// Function to apply or remove dark mode
+function setDarkMode(isDark) {
+    if (isDark) {
+        document.body.classList.add('dark-mode');
+        localStorage.setItem('darkMode', 'enabled');
+    } else {
+        document.body.classList.remove('dark-mode');
+        localStorage.setItem('darkMode', 'disabled');
+    }
+}
+
+// Event listener for the toggle button
+if (darkModeToggleButton) { // Check if the button exists
+    darkModeToggleButton.addEventListener('click', () => {
+        const isDarkModeEnabled = document.body.classList.contains('dark-mode');
+        setDarkMode(!isDarkModeEnabled);
+    });
+}
+
+// Check localStorage on page load
+document.addEventListener('DOMContentLoaded', () => {
+    const darkModeSavedPreference = localStorage.getItem('darkMode');
+    if (darkModeSavedPreference === 'enabled') {
+        setDarkMode(true);
+    } else {
+        // Optionally, explicitly set to light mode if preference is 'disabled' or not set
+        // setDarkMode(false); // This line is optional if default is light mode
+    }
+});
