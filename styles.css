@@ -14,6 +14,17 @@
   body {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
+    background-color: var(--white); /* Default light mode background */
+    color: var(--black); /* Default light mode text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for theme changes */
+  }
+
+  body.dark-mode {
+    --white: #1A1A1A; /* Dark background for dark mode */
+    --black: #F0F0F0; /* Light text for dark mode */
+    --very-light-pink: #4A4A4A; /* Darker border/muted text for dark mode */
+    --text-input-field: #2B2B2B; /* Darker component background for dark mode */
+    /* --hospital-green remains unchanged for now. Specific elements might need overrides. */
   }
 
   /*HEADER*/
@@ -256,7 +267,7 @@
     font-size: var(--sm);
   }
   .desktop-menu ul li a {
-    color: var(--back);
+    color: var(--black);
     text-decoration: none;
     margin-bottom: 20px;
     display: inline-block;
@@ -497,3 +508,121 @@
     }
    
   }
+
+/* DARK MODE SPECIFIC OVERRIDES */
+/* General text color for links and specific elements in dark mode */
+body.dark-mode .navbar-left ul li a,
+body.dark-mode .mobile-menu a,
+body.dark-mode .navbar-email,
+body.dark-mode .navbar-right ul li a, /* Covers text like "correo@example.com" */
+body.dark-mode .shopping-cart p:nth-child(2), /* Item titles in cart */
+body.dark-mode .product-info div p:nth-child(2), /* Product card description */
+body.dark-mode .title-populares,
+body.dark-mode .nuevo-articulo h3,
+body.dark-mode .nuevo-articulo p,
+body.dark-mode .title, /* "Mi orden" title in aside */
+body.dark-mode .order p, /* Text within the order summary boxes */
+body.dark-mode .desktop-menu ul li a { /* Desktop menu links already use var(--black) */
+  color: var(--black); /* Uses dark-mode's --black (light text) */
+}
+
+/* Borders in dark mode */
+body.dark-mode .navbar-left ul li,
+body.dark-mode nav,
+body.dark-mode .desktop-menu,
+body.dark-mode .mobile-menu,
+body.dark-mode .product-detail,
+body.dark-mode .product-card,
+body.dark-mode .nuevo-articulo,
+body.dark-mode .product-info-precio button {
+  border-color: var(--very-light-pink); /* Uses dark-mode's --very-light-pink */
+}
+
+/* Hover effects for navbar */
+body.dark-mode .navbar-left ul li:hover {
+  border-color: var(--hospital-green);
+  background-color: var(--very-light-pink); /* Uses dark-mode's --very-light-pink */
+}
+body.dark-mode .navbar-left ul li:hover a {
+   color: var(--hospital-green); /* Keep text color on hover */
+}
+body.dark-mode .navbar-right ul li a:hover {
+    border-color: var(--hospital-green);
+    color: var(--hospital-green);
+}
+
+
+/* Special cases for colors */
+body.dark-mode .mobile-menu .sign-out {
+  color: var(--hospital-green) !important; /* Keep sign-out green */
+}
+
+body.dark-mode .container-banner h2 {
+  /* Original color: var(--text-input-field) which is light gray.
+     In dark mode, var(--text-input-field) becomes #2B2B2B (dark). So, banner text needs to be light. */
+  color: #EAEAEA; /* A very light gray, distinct from primary light text if needed */
+}
+
+body.dark-mode footer span a {
+  /* Footer background is --hospital-green. Links are var(--white) in light mode.
+     In dark mode, var(--white) (footer link color) becomes the dark background color.
+     So, footer links need a color that contrasts with --hospital-green. A dark color is suitable. */
+  color: #204e28; /* A darker green or black for text on --hospital-green background */
+}
+
+/* Backgrounds for pop-up/off-canvas elements and cards */
+body.dark-mode .desktop-menu,
+body.dark-mode .mobile-menu,
+body.dark-mode .product-detail, /* "Mi orden" / shopping cart aside */
+body.dark-mode .product-card {
+  background-color: var(--white); /* Uses dark-mode's --white (dark background) */
+}
+
+/* Ensure box shadows on product cards are visible on dark backgrounds */
+body.dark-mode .product-card {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4); /* Darker, more prominent shadow */
+}
+
+/* Buttons with --hospital-green background */
+body.dark-mode .primary-button,
+body.dark-mode .product-info-precio button {
+  background-color: var(--hospital-green); /* Stays green */
+  color: #103c17; /* Dark text for contrast on green buttons */
+}
+body.dark-mode .primary-button:hover, /* Define hover for dark mode if different */
+body.dark-mode .product-info-precio button:hover {
+  /* example: background-color: #008f53; darker green */
+}
+
+/* Active navbar item */
+body.dark-mode .navbar-left ul li.active {
+  background-color: var(--hospital-green); /* Keep active background */
+}
+body.dark-mode .navbar-left ul li.active a {
+  color: #103c17; /* Dark text color on active background */
+}
+
+/* Address potential icon visibility issues if they are SVGs with hardcoded fills */
+/* Example: If menu icon is black SVG, it will be hard to see.
+   body.dark-mode .menu svg { fill: var(--black); } // Makes it light
+   This requires knowing the SVG structure or using filter if it's an <img> tag.
+   For now, assuming icons are either light-colored or will be handled if issues arise.
+*/
+body.dark-mode .navbar-shopping-cart div { /* The number bubble on the cart */
+    background-color: var(--hospital-green);
+    color: #103c17; /* Dark text on green bubble */
+}
+
+/* Ensure header, which is --hospital-green, has dark text if any text is directly in it */
+body.dark-mode header h1 { /* Assuming h1 is direct child for site title */
+    color: #103c17; /* Dark text on green header */
+}
+body.dark-mode header {
+    background-color: var(--hospital-green); /* Ensure header keeps its green background */
+}
+
+
+/* The .parrafo-dos in footer also has --hospital-green background */
+body.dark-mode .parrafo-dos {
+    color: #103c17; /* Dark text on green background */
+}

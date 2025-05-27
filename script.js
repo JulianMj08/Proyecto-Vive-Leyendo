@@ -183,3 +183,30 @@ productList.push({
 // }
 
 // renderProducts();
+
+// Dark Mode Toggle Functionality
+const darkModeButton = document.getElementById('darkModeToggle');
+
+function applySavedTheme() {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+  } else {
+    // Default to light mode if no theme saved or if theme is 'light'
+    document.body.classList.remove('dark-mode');
+  }
+}
+
+if (darkModeButton) { // Check if the button exists to avoid errors on other pages
+  darkModeButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    if (document.body.classList.contains('dark-mode')) {
+      localStorage.setItem('theme', 'dark');
+    } else {
+      localStorage.setItem('theme', 'light');
+    }
+  });
+}
+
+// Apply the saved theme when the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', applySavedTheme);
