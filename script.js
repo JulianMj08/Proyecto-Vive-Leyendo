@@ -195,6 +195,15 @@ function applySavedTheme() {
     // Default to light mode if no theme saved or if theme is 'light'
     document.body.classList.remove('dark-mode');
   }
+
+  // Update aria-pressed attribute for the dark mode button if it exists
+  if (darkModeButton) {
+    if (document.body.classList.contains('dark-mode')) {
+      darkModeButton.setAttribute('aria-pressed', 'true');
+    } else {
+      darkModeButton.setAttribute('aria-pressed', 'false');
+    }
+  }
 }
 
 if (darkModeButton) { // Check if the button exists to avoid errors on other pages
@@ -202,8 +211,10 @@ if (darkModeButton) { // Check if the button exists to avoid errors on other pag
     document.body.classList.toggle('dark-mode');
     if (document.body.classList.contains('dark-mode')) {
       localStorage.setItem('theme', 'dark');
+      darkModeButton.setAttribute('aria-pressed', 'true');
     } else {
       localStorage.setItem('theme', 'light');
+      darkModeButton.setAttribute('aria-pressed', 'false');
     }
   });
 }
