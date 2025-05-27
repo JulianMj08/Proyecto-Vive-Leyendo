@@ -563,13 +563,6 @@ body.dark-mode .container-banner h2 {
   color: #EAEAEA; /* A very light gray, distinct from primary light text if needed */
 }
 
-body.dark-mode footer span a {
-  /* Footer background is --hospital-green. Links are var(--white) in light mode.
-     In dark mode, var(--white) (footer link color) becomes the dark background color.
-     So, footer links need a color that contrasts with --hospital-green. A dark color is suitable. */
-  color: #204e28; /* A darker green or black for text on --hospital-green background */
-}
-
 /* Backgrounds for pop-up/off-canvas elements and cards */
 body.dark-mode .desktop-menu,
 body.dark-mode .mobile-menu,
@@ -625,4 +618,46 @@ body.dark-mode header {
 /* The .parrafo-dos in footer also has --hospital-green background */
 body.dark-mode .parrafo-dos {
     color: #103c17; /* Dark text on green background */
+}
+
+/* Accessibility Improvements: Contrast & Focus */
+
+/* Light Mode Contrast - --very-light-pink text */
+body:not(.dark-mode) .shopping-cart p:nth-child(2), 
+body:not(.dark-mode) .product-info div p:nth-child(2) { 
+  color: #555555; 
+}
+
+/* Light Mode Contrast - Text on --hospital-green */
+body:not(.dark-mode) .primary-button, 
+body:not(.dark-mode) .product-info-precio button {
+  color: #103c17; 
+}
+body:not(.dark-mode) footer span a { 
+  color: #103c17; 
+}
+
+/* Dark Mode Contrast - footer span a (This overrides the existing one if present, or adds it) */
+body.dark-mode footer span a {
+  color: #103c17; /* Ensuring this is specifically set for dark mode as requested */
+}
+
+/* Banner Text Readability */
+.container-banner h2 {
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+/* Generic Focus Indicators */
+a:focus-visible, 
+button:focus-visible, 
+[tabindex="0"]:focus-visible { 
+    outline: 3px solid #005fcc !important;
+    outline-offset: 1px !important;
+    box-shadow: 0 0 0 2px var(--white) !important; 
+}
+body.dark-mode a:focus-visible, 
+body.dark-mode button:focus-visible, 
+body.dark-mode [tabindex="0"]:focus-visible { 
+    outline-color: #77baff !important; 
+    box-shadow: 0 0 0 2px var(--white) !important; /* In dark-mode, var(--white) is the dark background */
 }
