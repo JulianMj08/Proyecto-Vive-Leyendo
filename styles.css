@@ -2,9 +2,10 @@
 :root {
     --white: #FFFFFF;
     --black: #000000;
-    --very-light-pink: #C7C7C7;
+    --very-light-pink: #757575; /* Changed for better contrast */
     --text-input-field: #F7F7F7;
     --hospital-green: #ACD9B2;
+    --dark-green-accent: #006400; /* Added for toggle button */
     --sm: 14px;
     --md: 16px;
     --lg: 18px;
@@ -370,7 +371,7 @@
     background-color: var(--hospital-green);
     border-radius: 8px;
     border: none;
-    color: var(--white);
+    color: #000000; /* Changed for better contrast */
     width: 100%;
     cursor: pointer;
     font-size: var(--md);
@@ -505,7 +506,7 @@
     --dm-text: #E0E0E0;
     --dm-surface: #1E1E1E;
     --dm-primary: #7BB6A4;
-    --dm-secondary-text: #A0A0A0;
+    --dm-secondary-text: #BDBDBD; /* Changed for better contrast on dark surfaces */
 }
 
 /* Dark Mode Base Styles - Appended */
@@ -604,9 +605,9 @@ body.dark-mode .product-info-precio button {
 /* Dark Mode Toggle Button Style - Appended */
 #darkModeToggle {
     padding: 8px 12px;
-    border: 1px solid var(--hospital-green);
+    border: 1px solid var(--dark-green-accent); /* Changed for better contrast */
     background-color: transparent;
-    color: var(--hospital-green);
+    color: var(--dark-green-accent); /* Changed for better contrast */
     border-radius: 6px;
     cursor: pointer;
     margin-right: 10px;

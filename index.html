@@ -16,13 +16,13 @@
 
   <!--HEADER-->
   <header>
-    <img src="./logos/logo-vive-2.png" alt="">
+    <img src="./logos/logo-vive-2.png" alt="Vive Leyendo - Logo">
     <h1>Vive Leyendo</h1>
   </header>
 
   <!--BARRA DE NAVEGACION--> <!--BARRA DE NAVEGACION IZQUIERDA-->
   <nav>
-    <img src="./icons/icon_menu.svg" alt="menu" class="menu">
+    <img src="./icons/icon_menu.svg" alt="menu" class="menu" aria-haspopup="true" aria-expanded="false" aria-controls="mobileMenu">
     <div class="navbar-left">
       <ul>
         <li class="active" style="background-color: #ACD9B2;"><a href="index.html">INICIO</a></li>
@@ -38,7 +38,7 @@
     <div class="navbar-right">
       <ul>
         <li class="navbar-item">
-          <button id="darkModeToggle">Toggle Dark Mode</button>
+          <button id="darkModeToggle" aria-pressed="false">Toggle Dark Mode</button>
         </li>
         <li class="navbar-email">correo@example.com</li>
         <li class="navbar-shopping-cart">
@@ -62,7 +62,7 @@
       </div>
       
       <!--MENU MOBILE-->
-      <div class="mobile-menu inactive">
+      <div class="mobile-menu inactive" id="mobileMenu">
         <ul>
           <li><a class="active" href="index.html">INICIO</a></li>
           <li class="all"><a href="./masvendidos.html">Más vendidos</a></li>
@@ -102,7 +102,7 @@
     <div class="my-order-content">
       <div class="shopping-cart">
         <figure>
-          <img src="./img/librosFiccion/libroLobaNegra.webp" alt="libro Loba negra">
+          <img src="./img/librosFiccion/libroLobaNegra.webp" alt="Portada del libro: Loba Negra">
         </figure>
         <p>Loba negra</p>
         <p>$19,85 €</p>
@@ -111,7 +111,7 @@
 
       <div class="shopping-cart">
         <figure>
-          <img src="./img/librosJuveniles/libroInvisible.webp" alt="libro invisible">
+          <img src="./img/librosJuveniles/libroInvisible.webp" alt="Portada del libro: Invisible">
         </figure>
         <p>Invisible</p>
         <p>$15,15 €</p>
@@ -120,7 +120,7 @@
 
       <div class="shopping-cart">
         <figure>
-          <img src="./img/masVendidos/libroTodoArde.webp" alt="libro todo arde">
+          <img src="./img/masVendidos/libroTodoArde.webp" alt="Portada del libro: Todo Arde">
         </figure>
         <p>Todo arde</p>
         <p>$21,75 €</p>
@@ -150,12 +150,12 @@
 
     <!--SECCION DE LOS LIBROS MAS BUSCADOS EN MAYO-->
     <div>
-      <h3 class="title-populares">Libros más buscados en Mayo</h3>
+      <h2 class="title-populares">Libros más buscados en Mayo</h2>
     </div>
       <section class="container-populares-mayo">
         <div class="cards-container">
           <div class="product-card">
-            <img src="./img/otros/libroAmoresDistopicos.webp" alt="libro amores distopicos">
+            <img src="./img/otros/libroAmoresDistopicos.webp" alt="Portada del libro: Amores Distópicos">
             <div class="product-info">
               <div  class="product-info-precio">
                 <p>17,57 €</p>
@@ -181,7 +181,7 @@
        
           <div class="cards-container">
             <div class="product-card">
-              <img src="./img/otros/libroLAHermanaLunawebp.webp" alt="bike">
+              <img src="./img/otros/libroLAHermanaLunawebp.webp" alt="Portada del libro: La Hermana Luna">
               <div class="product-info">
                 <div  class="product-info-precio">
                   <p>5,69 €</p>
@@ -195,7 +195,7 @@
 
         <!--SECCION DEL ARTICULO-->
         <article class="nuevo-articulo">
-              <h3>Una Actividad fundamental</h3>
+              <h2>Una Actividad fundamental</h2>
               <p>Leer es una actividad fundamental para el desarrollo de la mente y el crecimiento personal. En la actualidad, la lectura de libros sigue siendo una forma relevante de adquirir conocimientos, desarrollar habilidades y ejercitar la imaginación. Europa es un continente que ha producido algunos de los autores más influyentes de la historia y que cuenta con una rica tradición literaria que se mantiene viva en la actualidad.</p> 
         </article>
 
@@ -206,7 +206,7 @@
             <div class="container-images">
               <div class="cards-container">
                 <div class="product-card">
-                  <img src="./img/otros/libroContandoAtardeceres.webp" alt="bike">
+                  <img src="./img/otros/libroContandoAtardeceres.webp" alt="Portada del libro: Contando Atardeceres">
                   <div class="product-info">
                     <div  class="product-info-precio">
                       <p>Contando atardeceres</p>
@@ -218,7 +218,7 @@
               <div class="container-images">
                 <div class="cards-container">
                   <div class="product-card">
-                    <img src="./img/otros/libroEbano.webp" alt="bike">
+                    <img src="./img/otros/libroEbano.webp" alt="Portada del libro: Ébano">
                     <div class="product-info">
                       <div  class="product-info-precio">
                         <p>Ebáno</p>
@@ -232,7 +232,7 @@
 
         <!--SECCION DEL ARTICULO 2-->
         <article class="nuevo-articulo articulo-dos">
-          <h3>Un impacto positivo</h3> 
+          <h2>Un impacto positivo</h2> 
           <p>
             Leer libros puede tener un impacto positivo en nuestras vidas de muchas maneras, ya sea aumentando nuestra capacidad de comprensión y análisis, mejorando nuestra habilidad para comunicarnos y expresarnos, o simplemente proporcionándonos una forma de entretenimiento y evasión. Además, la lectura también puede ayudarnos a conectarnos con la cultura y la historia de nuestro entorno.
           </p>
@@ -240,7 +240,7 @@
            
         <!--SECCION DE LIBROS GRATIS-->
         <div>
-          <h3 class="title-populares"> Muchos libros gratis</h3>
+          <h2 class="title-populares"> Muchos libros gratis</h2>
         </div>
           <section class="container-populares-mayo">
             <div class="cards-container">
@@ -284,7 +284,7 @@
 
               <div class="cards-container">
                 <div class="product-card">
-                  <img src="./img/librosGratis/libroSiEllaSupiera.webp" alt="bike">
+                  <img src="./img/librosGratis/libroSiEllaSupiera.webp" alt="Portada del libro: Si Ella Supiera">
                   <div class="product-info">
                     <div  class="product-info-precio">
                       <p>Gratis</p>
@@ -299,7 +299,7 @@
 
   <!--PIE DE PAGINA-->
   <footer>
-    <img src="./logos/logo-vive-2.png" alt="Logo">
+    <img src="./logos/logo-vive-2.png" alt="Vive Leyendo Logo">
     <p class="parrafo-uno">
       <span><a href="">Condiciones de uso</a></span>
       <span><a href="">Politica de privacidad</a></span>

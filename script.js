@@ -81,8 +81,10 @@ function toggleMobileMenu() {
     if (!isAsideClosed) {
        aside.classList.add('inactive');
 }     
-        mobileMenu.classList.toggle('inactive');
-        
+    mobileMenu.classList.toggle('inactive');
+    // Add ARIA update
+    const isMobileMenuOpen = !mobileMenu.classList.contains('inactive');
+    menuHamIcon.setAttribute('aria-expanded', isMobileMenuOpen ? 'true' : 'false');
 }
 
 // si el destok-menu esta abierto al momento de darle click al carrito entonces automaticamente se cierra el desktopMenu
@@ -96,6 +98,7 @@ function toggleCarroDeCompras() {
     const isMobileMenuClosed = mobileMenu.classList.contains('inactive');
     if (!isMobileMenuClosed) {
         mobileMenu.classList.add('inactive');
+        menuHamIcon.setAttribute('aria-expanded', 'false'); // Add this line
 }
      aside.classList.toggle('inactive');
 }
@@ -192,9 +195,11 @@ function setDarkMode(isDark) {
     if (isDark) {
         document.body.classList.add('dark-mode');
         localStorage.setItem('darkMode', 'enabled');
+        if (darkModeToggleButton) darkModeToggleButton.setAttribute('aria-pressed', 'true'); // Add this
     } else {
         document.body.classList.remove('dark-mode');
         localStorage.setItem('darkMode', 'disabled');
+        if (darkModeToggleButton) darkModeToggleButton.setAttribute('aria-pressed', 'false'); // Add this
     }
 }
 
@@ -210,9 +215,11 @@ if (darkModeToggleButton) { // Check if the button exists
 document.addEventListener('DOMContentLoaded', () => {
     const darkModeSavedPreference = localStorage.getItem('darkMode');
     if (darkModeSavedPreference === 'enabled') {
-        setDarkMode(true);
+        setDarkMode(true); // This will call setAttribute via setDarkMode
     } else {
-        // Optionally, explicitly set to light mode if preference is 'disabled' or not set
-        // setDarkMode(false); // This line is optional if default is light mode
+        // Ensure aria-pressed is false if not enabled or preference not set
+        if (darkModeToggleButton) darkModeToggleButton.setAttribute('aria-pressed', 'false');
     }
+    // Potentially initialize mobile menu aria-expanded state here if needed,
+    // though it defaults to false in HTML and only changes on click.
 });
