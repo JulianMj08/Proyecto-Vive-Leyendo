@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,16 +13,13 @@
   <title>Vive Leyendo</title>
 </head>
 <body>
-
-  <!--HEADER-->
-  <header>
+  <header role="banner">
     <img src="./logos/logo-vive-2.png" alt="Logo de Vive Leyendo">
     <h1>Vive Leyendo</h1>
   </header>
 
-  <!--BARRA DE NAVEGACION--> <!--BARRA DE NAVEGACION IZQUIERDA-->
-  <nav role="navigation">
-    <img src="./icons/icon_menu.svg" alt="menu" class="menu">
+  <nav role="navigation" aria-label="Menú principal">
+    <img src="./icons/icon_menu.svg" alt="Abrir menú" class="menu" aria-hidden="true">
     <div class="navbar-left">
       <ul>
         <li class="active" style="background-color: #ACD9B2;"><a href="index.html">INICIO</a></li>
@@ -33,282 +30,171 @@
         <li class="desarrollo-lista"><a href="desarrollopersonal.html">Desarrollo personal</a></li>
       </ul>
     </div>
-
-      <!--BARRA DE NAVEGACION DERECHA-->
     <div class="navbar-right">
       <ul>
-        <li class="navbar-email">correo@example.com</li>
+        <li class="navbar-email"><a href="mailto:correo@example.com">correo@example.com</a></li>
         <li class="navbar-shopping-cart">
-          <img src="./icons/icon_shopping_cart.svg" alt="shopping cart" aria-hidden="true">
-
-          <div>3</div>
+          <button aria-label="Ver carrito">
+            <img src="./icons/icon_shopping_cart.svg" alt="Carrito de compras">
+            <div aria-hidden="true">3</div>
+          </button>
         </li>
-        <li><button id="darkModeToggle">Toggle Dark Mode</button></li>
+        <li><button id="darkModeToggle" aria-label="Activar o desactivar modo oscuro">Toggle Dark Mode</button></li>
       </ul>
     </div>
-    <div class="desktop-menu inactive">
-        <ul>
-          <li>
-            <a href="./myOrder.html" class="title">Ordenes</a>
-          </li>
-          <li>
-            <a href="./myAccount.html">Mi cuenta</a>
-          </li>
-          <li>
-            <a href="./signUp.html">Inscribirse</a>
-          </li>
-        </ul>
-      </div>
-      
-      <!--MENU MOBILE-->
-      <div class="mobile-menu inactive">
-        <ul>
-          <li><a class="active" href="index.html">INICIO</a></li>
-          <li class="all"><a href="./masvendidos.html">Más vendidos</a></li>
-          <li class="ficcion-lista"><a href="ficcion.html">Ficción</a></li>
-          <li class="suspenso-lista"><a href="suspenso.html">Suspenso</a></li>
-          <li class="juveniles-lista"><a href="juveniles.html">Juveniles</a></li>
-          <li class="desarrollo-lista"><a href="desarrollopersonal.html">Desarrollo personal</a></li>
-        </ul>
-    
-        <ul>
-          <li>
-            <a href="./myOrder.html">Mis ordenes</a>
-          </li>
-          <li>
-            <a href="./myAccount.html">Mi cuenta</a>
-          </li>
-        </ul>
-    
-        <ul>
-          <li>
-            <a href="/" class="email"></a>
-          </li>
-          <li>
-            <a href="./signUp.html" class="sign-out">Inscribirse</a>
-          </li>
-        </ul>
-      </div>
   </nav>
 
-  <!--ASIDE-->
-  <aside class="product-detail inactive">
+  <aside class="product-detail inactive" aria-label="Detalle del carrito de compras">
     <div class="title-container">
-      <img src="./icons/flechita.svg" alt="arrow">
+      <img src="./icons/flechita.svg" alt="Volver">
       <p class="title">Mi orden</p>
     </div>
-
     <div class="my-order-content">
       <div class="shopping-cart">
-        <figure>
-          <img src="./img/librosFiccion/libroLobaNegra.webp" alt="libro Loba negra">
-        </figure>
+        <figure><img src="./img/librosFiccion/libroLobaNegra.webp" alt="Portada del libro Loba Negra"></figure>
         <p>Loba negra</p>
         <p>$19,85 €</p>
-        <img src="./icons/icon_close.png" alt="close">
+        <img src="./icons/icon_close.png" alt="Eliminar Loba negra del carrito">
       </div>
-
       <div class="shopping-cart">
-        <figure>
-          <img src="./img/librosJuveniles/libroInvisible.webp" alt="libro invisible">
-        </figure>
+        <figure><img src="./img/librosJuveniles/libroInvisible.webp" alt="Portada del libro Invisible"></figure>
         <p>Invisible</p>
         <p>$15,15 €</p>
-        <img src="./icons/icon_close.png" alt="close">
+        <img src="./icons/icon_close.png" alt="Eliminar libro Invisible del carrito">
       </div>
-
       <div class="shopping-cart">
-        <figure>
-          <img src="./img/masVendidos/libroTodoArde.webp" alt="libro todo arde">
-        </figure>
+        <figure><img src="./img/masVendidos/libroTodoArde.webp" alt="Portada del libro Todo Arde"></figure>
         <p>Todo arde</p>
         <p>$21,75 €</p>
-        <img src="./icons/icon_close.png" alt="close">
+        <img src="./icons/icon_close.png" alt="Eliminar libro Todo Arde del carrito">
       </div>
-
       <div class="order">
-        <p>
-          <span>Total</span>
-        </p>
+        <p><span>Total</span></p>
         <p>56,75 €</p>
       </div>
-
-      <button class="primary-button checkout">
-        Checkout
-      </button>
+      <button class="primary-button checkout">Finalizar compra</button>
     </div>
-  </div>
-</aside>
+  </aside>
 
-  <!--CONTENIDO PRINCIPAL-->
   <main role="main">
     <div class="container-banner">
-      <img src="./img/otros/banner-2.jpg" alt="">
+      <img src="./img/otros/banner-2.jpg" alt="Banner promoción Vive Leyendo">
       <h2 class="frase-banner">"Los libros son el alimento del alma, y los buenos libros son el manjar exquisito que nos nutre y nos hace crecer como seres humanos." Guillermo del Toro.</h2>
     </div>
 
-    <!--SECCION DE LOS LIBROS MAS BUSCADOS EN MAYO-->
-    <div>
-      <h3 class="title-populares">Libros más buscados en Mayo</h3>
-    </div>
-      <section class="container-populares-mayo">
-        <div class="cards-container">
-          <div class="product-card">
-            <img src="./img/otros/libroAmoresDistopicos.webp" alt="libro amores distopicos">
-            <div class="product-info">
-              <div  class="product-info-precio">
-                <p>17,57 €</p>
-                <p>El amor tiene mil caras. Y no todas ellas siempre parecen reales, sino que, en ocasiones, nos semejan imaginadas, utópicas e incluso surrealistas. Casi ciencia ficción. Y, a veces, ese amor es el más palpable…</p>
-                <button>COMPRAR</button>
-              </div>
+    <section aria-labelledby="titulo-mas-buscados">
+      <h3 id="titulo-mas-buscados">Libros más buscados en Mayo</h3>
+      <div class="cards-container">
+        <div class="product-card">
+          <img src="./img/otros/libroAmoresDistopicos.webp" alt="Portada del libro Amores Distópicos">
+          <div class="product-info">
+            <div class="product-info-precio">
+              <p>17,57 €</p>
+              <p>El amor tiene mil caras...</p>
+              <button>COMPRAR</button>
             </div>
           </div>
         </div>
-    
-        <div class="cards-container">
-          <div class="product-card">
-            <img src="./img/otros/libroElColegioMasRaroDelMundo.webp" alt="bike">
-            <div class="product-info">
-              <div  class="product-info-precio">
-                <p>9,45 €</p>
-                <p>El colegio mas raro del mundo ¿Qué pasaría si compartiésemos nuestra familia? El colegio de Fede es el más raro del mundo. Para empezar, se llama TELE: Tecno Escuela de Lenguas Extranjeras.</p>
-                <button>COMPRAR</button>
-              </div>
+        <div class="product-card">
+          <img src="./img/otros/libroElColegioMasRaroDelMundo.webp" alt="Portada del libro El colegio más raro del mundo">
+          <div class="product-info">
+            <div class="product-info-precio">
+              <p>9,45 €</p>
+              <p>El colegio de Fede es el más raro del mundo...</p>
+              <button>COMPRAR</button>
             </div>
           </div>
         </div>
-       
-          <div class="cards-container">
-            <div class="product-card">
-              <img src="./img/otros/libroLAHermanaLunawebp.webp" alt="bike">
-              <div class="product-info">
-                <div  class="product-info-precio">
-                  <p>5,69 €</p>
-                  <p>Este es el quinto volumen de la emocionante saga de Lucinda Riley Las 7 Hermanas, una serie de novelas basada en la mitología griega que enamorará a sus lectoras y que en este caso nos transporta a España.</p>
-                  <button>COMPRAR</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!--SECCION DEL ARTICULO-->
-        <article class="nuevo-articulo">
-              <h3>Una Actividad fundamental</h3>
-              <p>Leer es una actividad fundamental para el desarrollo de la mente y el crecimiento personal. En la actualidad, la lectura de libros sigue siendo una forma relevante de adquirir conocimientos, desarrollar habilidades y ejercitar la imaginación. Europa es un continente que ha producido algunos de los autores más influyentes de la historia y que cuenta con una rica tradición literaria que se mantiene viva en la actualidad.</p> 
-        </article>
-
-<!--SECCION DEL VIDEO-->
-        <div class="contenedor-seccion-video">
-            <video class="video" controls muted autoplay loop preload="auto">
-              <source src="./img/otros/video2.mp4" type="video/mp4">
-              <track kind="captions" src="subtitulos.vtt" srclang="es" label="Español">
-            </video>
-            <div class="container-images">
-              <div class="cards-container">
-                <div class="product-card">
-                  <img src="./img/otros/libroContandoAtardeceres.webp" alt="bike">
-                  <div class="product-info">
-                    <div  class="product-info-precio">
-                      <p>Contando atardeceres</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          
-              <div class="container-images">
-                <div class="cards-container">
-                  <div class="product-card">
-                    <img src="./img/otros/libroEbano.webp" alt="bike">
-                    <div class="product-info">
-                      <div  class="product-info-precio">
-                        <p>Ebáno</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+        <div class="product-card">
+          <img src="./img/otros/libroLAHermanaLunawebp.webp" alt="Portada del libro La hermana luna">
+          <div class="product-info">
+            <div class="product-info-precio">
+              <p>5,69 €</p>
+              <p>Volumen cinco de la saga de Lucinda Riley...</p>
+              <button>COMPRAR</button>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!--SECCION DEL ARTICULO 2-->
-        <article class="nuevo-articulo articulo-dos">
-          <h3>Un impacto positivo</h3> 
-          <p>
-            Leer libros puede tener un impacto positivo en nuestras vidas de muchas maneras, ya sea aumentando nuestra capacidad de comprensión y análisis, mejorando nuestra habilidad para comunicarnos y expresarnos, o simplemente proporcionándonos una forma de entretenimiento y evasión. Además, la lectura también puede ayudarnos a conectarnos con la cultura y la historia de nuestro entorno.
-          </p>
+    <article class="nuevo-articulo">
+      <h3>Una Actividad fundamental</h3>
+      <p>Leer es una actividad fundamental para el desarrollo de la mente y el crecimiento personal...</p>
     </article>
-           
-        <!--SECCION DE LIBROS GRATIS-->
-        <div>
-          <h3 class="title-populares"> Muchos libros gratis</h3>
-        </div>
-          <section class="container-populares-mayo">
-            <div class="cards-container">
-              <div class="product-card">
-                <img src="./img/librosGratis/laCaraDeLaMuerte.webp" alt="libro la cara de la muerte">
-                <div class="product-info">
-                  <div  class="product-info-precio">
-                    <p>Gratis</p>
-                    <p>LA CARA DE LA MUERTE es el libro número 1 de una nueva serie de thriller del autor de best-sellers, Blake Pierce, cuyo primer libro, Una vez desaparecido (Libro número 1), tiene más de 1.000 críticas de cinco estrellas.</p>
-                    <button>VER</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-        
-            <div class="cards-container">
-              <div class="product-card">
-                <img src="./img/librosGratis/laEsposaPerfecta.webp" alt="bike">
-                <div class="product-info">
-                  <div  class="product-info-precio">
-                    <p>Gratis</p>
-                    <p>La estudiante de perfilado de criminales (y recién casada), Jessie Hunt, descubre que en su nuevo hogar en los suburbios acechan secretos ocultos; cuando aparece un cadáver, se ve atrapada entre el punto de mira de sus nuevas amistades.</p>
-                    <button>VER</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-           
-              <div class="cards-container">
-                <div class="product-card">
-                  <img src="./img/librosGratis/libroVolvereATI.webp" alt="bike">
-                  <div class="product-info">
-                    <div  class="product-info-precio">
-                      <p>Gratis</p>
-                      <p>Lo bueno de los libros de Patricia es que cada vez que desees tener esa sensación tan hogareña que envuelve a los Brady, solo has de coger sus libros y dejarte llevar por sus historias. Gracias a su forma de escribir, tan descriptible.</p>
-                      <button>VER</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
-              <div class="cards-container">
-                <div class="product-card">
-                  <img src="./img/librosGratis/libroSiEllaSupiera.webp" alt="bike">
-                  <div class="product-info">
-                    <div  class="product-info-precio">
-                      <p>Gratis</p>
-                      <p>Si ella supiera;toda una obra maestra de misterio y suspenso. Blake Pierce hizo un magnífico trabajo desarrollando personajes con un mundo psicológico tan bien descrito que es como un acceso directo al interior de sus mentes.</p>
-                      <button>VER</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section> 
+    <section class="contenedor-seccion-video" aria-label="Sección de video">
+      <video class="video" controls muted autoplay loop preload="auto" aria-label="Video promocional">
+        <source src="./img/otros/video2.mp4" type="video/mp4">
+        <track kind="captions" src="subtitulos.vtt" srclang="es" label="Español">
+      </video>
+      <div class="container-images">
+        <div class="product-card">
+          <img src="./img/otros/libroContandoAtardeceres.webp" alt="Portada del libro Contando atardeceres">
+          <div class="product-info"><p>Contando atardeceres</p></div>
+        </div>
+        <div class="product-card">
+          <img src="./img/otros/libroEbano.webp" alt="Portada del libro Ebáno">
+          <div class="product-info"><p>Ebáno</p></div>
+        </div>
+      </div>
+    </section>
+
+    <article class="nuevo-articulo articulo-dos">
+      <h3>Un impacto positivo</h3>
+      <p>Leer libros puede tener un impacto positivo en nuestras vidas...</p>
+    </article>
+
+    <section aria-labelledby="titulo-libros-gratis">
+      <h3 id="titulo-libros-gratis">Muchos libros gratis</h3>
+      <div class="cards-container">
+        <div class="product-card">
+          <img src="./img/librosGratis/laCaraDeLaMuerte.webp" alt="Portada del libro La cara de la muerte">
+          <div class="product-info-precio">
+            <p>Gratis</p>
+            <p>Thriller de Blake Pierce...</p>
+            <button>VER</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="./img/librosGratis/laEsposaPerfecta.webp" alt="Portada del libro La esposa perfecta">
+          <div class="product-info-precio">
+            <p>Gratis</p>
+            <p>Jessie Hunt descubre secretos en su nuevo hogar...</p>
+            <button>VER</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="./img/librosGratis/libroVolvereATI.webp" alt="Portada del libro Volveré a ti">
+          <div class="product-info-precio">
+            <p>Gratis</p>
+            <p>Historias de los Brady escritas por Patricia...</p>
+            <button>VER</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="./img/librosGratis/libroSiEllaSupiera.webp" alt="Portada del libro Si ella supiera">
+          <div class="product-info-precio">
+            <p>Gratis</p>
+            <p>Obra maestra de misterio y suspenso por Blake Pierce...</p>
+            <button>VER</button>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!--PIE DE PAGINA-->
   <footer role="contentinfo">
-    <img src="./logos/logo-vive-2.png" alt="Logo">
+    <img src="./logos/logo-vive-2.png" alt="Logo Vive Leyendo">
     <p class="parrafo-uno">
-      <span><a href="">Condiciones de uso</a></span>
-      <span><a href="">Politica de privacidad</a></span>
-      <span><a href="">Aviso legal</a></span>
+      <a href="">Condiciones de uso</a>
+      <a href="">Política de privacidad</a>
+      <a href="">Aviso legal</a>
     </p>
-    <p class="parrafo-dos">© 2023 Vive leyendo</p>
+    <p class="parrafo-dos">&copy; 2023 Vive leyendo</p>
   </footer>
 
   <script src="./script.js"></script>
 </body>
 </html>
+
