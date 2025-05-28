@@ -5,21 +5,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="Author" content="Julian Gómez Henao">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" media="all">
   <link rel="icon" sizes="192x192" href="./favicon.ico" type="image/ico">
   <link rel="stylesheet" href="./styles.css">
   <title>Vive Leyendo</title>
 </head>
 <body>
   <header role="banner">
-    <img src="./logos/logo-vive-2.png" alt="Logo de Vive Leyendo">
+    <img src="./logos/logo-vive-2.png" alt="Logo de Vive Leyendo" loading="lazy">
     <h1>Vive Leyendo</h1>
   </header>
 
   <nav role="navigation" aria-label="Menú principal">
-    <img src="./icons/icon_menu.svg" alt="Abrir menú" class="menu" aria-hidden="true">
+    <img src="./icons/icon_menu.svg" alt="Abrir menú" class="menu" aria-hidden="true" loading="lazy">
     <div class="navbar-left">
       <ul>
         <li class="active" style="background-color: #ACD9B2;"><a href="index.html">INICIO</a></li>
@@ -35,7 +35,7 @@
         <li class="navbar-email"><a href="mailto:correo@example.com">correo@example.com</a></li>
         <li class="navbar-shopping-cart">
           <button aria-label="Ver carrito">
-            <img src="./icons/icon_shopping_cart.svg" alt="Carrito de compras">
+            <img src="./icons/icon_shopping_cart.svg" alt="Carrito de compras" loading="lazy">
             <div aria-hidden="true">3</div>
           </button>
         </li>
@@ -46,27 +46,27 @@
 
   <aside class="product-detail inactive" aria-label="Detalle del carrito de compras">
     <div class="title-container">
-      <img src="./icons/flechita.svg" alt="Volver">
+      <img src="./icons/flechita.svg" alt="Volver" loading="lazy">
       <p class="title">Mi orden</p>
     </div>
     <div class="my-order-content">
       <div class="shopping-cart">
-        <figure><img src="./img/librosFiccion/libroLobaNegra.webp" alt="Portada del libro Loba Negra"></figure>
+        <figure><img src="./img/librosFiccion/libroLobaNegra.webp" alt="Portada del libro Loba Negra" loading="lazy"></figure>
         <p>Loba negra</p>
         <p>$19,85 €</p>
-        <img src="./icons/icon_close.png" alt="Eliminar Loba negra del carrito">
+        <img src="./icons/icon_close.png" alt="Eliminar Loba negra del carrito" loading="lazy">
       </div>
       <div class="shopping-cart">
-        <figure><img src="./img/librosJuveniles/libroInvisible.webp" alt="Portada del libro Invisible"></figure>
+        <figure><img src="./img/librosJuveniles/libroInvisible.webp" alt="Portada del libro Invisible" loading="lazy"></figure>
         <p>Invisible</p>
         <p>$15,15 €</p>
-        <img src="./icons/icon_close.png" alt="Eliminar libro Invisible del carrito">
+        <img src="./icons/icon_close.png" alt="Eliminar libro Invisible del carrito" loading="lazy">
       </div>
       <div class="shopping-cart">
-        <figure><img src="./img/masVendidos/libroTodoArde.webp" alt="Portada del libro Todo Arde"></figure>
+        <figure><img src="./img/masVendidos/libroTodoArde.webp" alt="Portada del libro Todo Arde" loading="lazy"></figure>
         <p>Todo arde</p>
         <p>$21,75 €</p>
-        <img src="./icons/icon_close.png" alt="Eliminar libro Todo Arde del carrito">
+        <img src="./icons/icon_close.png" alt="Eliminar libro Todo Arde del carrito" loading="lazy">
       </div>
       <div class="order">
         <p><span>Total</span></p>
@@ -78,7 +78,7 @@
 
   <main role="main">
     <div class="container-banner">
-      <img src="./img/otros/banner-2.jpg" alt="Banner promoción Vive Leyendo">
+      <img src="./img/otros/banner-2.jpg" alt="Banner promoción Vive Leyendo" loading="lazy">
       <h2 class="frase-banner">"Los libros son el alimento del alma, y los buenos libros son el manjar exquisito que nos nutre y nos hace crecer como seres humanos." Guillermo del Toro.</h2>
     </div>
 
@@ -86,7 +86,7 @@
       <h3 id="titulo-mas-buscados">Libros más buscados en Mayo</h3>
       <div class="cards-container">
         <div class="product-card">
-          <img src="./img/otros/libroAmoresDistopicos.webp" alt="Portada del libro Amores Distópicos">
+          <img src="./img/otros/libroAmoresDistopicos.webp" alt="Portada del libro Amores Distópicos" loading="lazy">
           <div class="product-info">
             <div class="product-info-precio">
               <p>17,57 €</p>
@@ -96,7 +96,7 @@
           </div>
         </div>
         <div class="product-card">
-          <img src="./img/otros/libroElColegioMasRaroDelMundo.webp" alt="Portada del libro El colegio más raro del mundo">
+          <img src="./img/otros/libroElColegioMasRaroDelMundo.webp" alt="Portada del libro El colegio más raro del mundo" loading="lazy">
           <div class="product-info">
             <div class="product-info-precio">
               <p>9,45 €</p>
@@ -106,7 +106,7 @@
           </div>
         </div>
         <div class="product-card">
-          <img src="./img/otros/libroLAHermanaLunawebp.webp" alt="Portada del libro La hermana luna">
+          <img src="./img/otros/libroLAHermanaLunawebp.webp" alt="Portada del libro La hermana luna" loading="lazy">
           <div class="product-info">
             <div class="product-info-precio">
               <p>5,69 €</p>
@@ -125,16 +125,16 @@
 
     <section class="contenedor-seccion-video" aria-label="Sección de video">
       <video class="video" controls muted autoplay loop preload="auto" aria-label="Video promocional">
-        <source src="./img/otros/video2.mp4" type="video/mp4">
+        <source src="./img/otros/video2.mp4" type="video/mp4" loading="lazy">
         <track kind="captions" src="subtitulos.vtt" srclang="es" label="Español">
       </video>
       <div class="container-images">
         <div class="product-card">
-          <img src="./img/otros/libroContandoAtardeceres.webp" alt="Portada del libro Contando atardeceres">
+          <img src="./img/otros/libroContandoAtardeceres.webp" alt="Portada del libro Contando atardeceres" loading="lazy">
           <div class="product-info"><p>Contando atardeceres</p></div>
         </div>
         <div class="product-card">
-          <img src="./img/otros/libroEbano.webp" alt="Portada del libro Ebáno">
+          <img src="./img/otros/libroEbano.webp" alt="Portada del libro Ebáno" loading="lazy">
           <div class="product-info"><p>Ebáno</p></div>
         </div>
       </div>
@@ -149,7 +149,7 @@
       <h3 id="titulo-libros-gratis">Muchos libros gratis</h3>
       <div class="cards-container">
         <div class="product-card">
-          <img src="./img/librosGratis/laCaraDeLaMuerte.webp" alt="Portada del libro La cara de la muerte">
+          <img src="./img/librosGratis/laCaraDeLaMuerte.webp" alt="Portada del libro La cara de la muerte" loading="lazy">
           <div class="product-info-precio">
             <p>Gratis</p>
             <p>Thriller de Blake Pierce...</p>
@@ -157,7 +157,7 @@
           </div>
         </div>
         <div class="product-card">
-          <img src="./img/librosGratis/laEsposaPerfecta.webp" alt="Portada del libro La esposa perfecta">
+          <img src="./img/librosGratis/laEsposaPerfecta.webp" alt="Portada del libro La esposa perfecta" loading="lazy">
           <div class="product-info-precio">
             <p>Gratis</p>
             <p>Jessie Hunt descubre secretos en su nuevo hogar...</p>
@@ -165,7 +165,7 @@
           </div>
         </div>
         <div class="product-card">
-          <img src="./img/librosGratis/libroVolvereATI.webp" alt="Portada del libro Volveré a ti">
+          <img src="./img/librosGratis/libroVolvereATI.webp" alt="Portada del libro Volveré a ti" loading="lazy">
           <div class="product-info-precio">
             <p>Gratis</p>
             <p>Historias de los Brady escritas por Patricia...</p>
@@ -173,7 +173,7 @@
           </div>
         </div>
         <div class="product-card">
-          <img src="./img/librosGratis/libroSiEllaSupiera.webp" alt="Portada del libro Si ella supiera">
+          <img src="./img/librosGratis/libroSiEllaSupiera.webp" alt="Portada del libro Si ella supiera" loading="lazy">
           <div class="product-info-precio">
             <p>Gratis</p>
             <p>Obra maestra de misterio y suspenso por Blake Pierce...</p>
@@ -185,7 +185,7 @@
   </main>
 
   <footer role="contentinfo">
-    <img src="./logos/logo-vive-2.png" alt="Logo Vive Leyendo">
+    <img src="./logos/logo-vive-2.png" alt="Logo Vive Leyendo" loading="lazy">
     <p class="parrafo-uno">
       <a href="">Condiciones de uso</a>
       <a href="">Política de privacidad</a>
@@ -194,7 +194,7 @@
     <p class="parrafo-dos">&copy; 2023 Vive leyendo</p>
   </footer>
 
-  <script src="./script.js"></script>
+  <script src="./script.js" defer></script>
 </body>
 </html>
 
