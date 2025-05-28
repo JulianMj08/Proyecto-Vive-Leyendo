@@ -16,12 +16,12 @@
 
   <!--HEADER-->
   <header>
-    <img src="./logos/logo-vive-2.png" alt="">
+    <img src="./logos/logo-vive-2.png" alt="Logo de Vive Leyendo">
     <h1>Vive Leyendo</h1>
   </header>
 
   <!--BARRA DE NAVEGACION--> <!--BARRA DE NAVEGACION IZQUIERDA-->
-  <nav>
+  <nav role="navigation">
     <img src="./icons/icon_menu.svg" alt="menu" class="menu">
     <div class="navbar-left">
       <ul>
@@ -39,7 +39,8 @@
       <ul>
         <li class="navbar-email">correo@example.com</li>
         <li class="navbar-shopping-cart">
-          <img src="./icons/icon_shopping_cart.svg" alt="shopping cart">
+          <img src="./icons/icon_shopping_cart.svg" alt="shopping cart" aria-hidden="true">
+
           <div>3</div>
         </li>
         <li><button id="darkModeToggle">Toggle Dark Mode</button></li>
@@ -140,7 +141,7 @@
 </aside>
 
   <!--CONTENIDO PRINCIPAL-->
-  <main>
+  <main role="main">
     <div class="container-banner">
       <img src="./img/otros/banner-2.jpg" alt="">
       <h2 class="frase-banner">"Los libros son el alimento del alma, y los buenos libros son el manjar exquisito que nos nutre y nos hace crecer como seres humanos." Guillermo del Toro.</h2>
@@ -199,7 +200,9 @@
 
 <!--SECCION DEL VIDEO-->
         <div class="contenedor-seccion-video">
-            <video class="video"src="./img/otros/video2.mp4" type="video/mp4"  muted autoplay loop preload="auto">
+            <video class="video" controls muted autoplay loop preload="auto">
+              <source src="./img/otros/video2.mp4" type="video/mp4">
+              <track kind="captions" src="subtitulos.vtt" srclang="es" label="Español">
             </video>
             <div class="container-images">
               <div class="cards-container">
@@ -296,7 +299,7 @@
   </main>
 
   <!--PIE DE PAGINA-->
-  <footer>
+  <footer role="contentinfo">
     <img src="./logos/logo-vive-2.png" alt="Logo">
     <p class="parrafo-uno">
       <span><a href="">Condiciones de uso</a></span>
